@@ -32,5 +32,13 @@ When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (
 
 To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: https://en.wikipedia.org/wiki/Color_wheel
 
-![image](https://user-images.githubusercontent.com/125164513/221445007-414f91ac-548e-4bd7-b1b2-3d5dc10aff9d.png)
+<img src="https://user-images.githubusercontent.com/125164513/221445007-414f91ac-548e-4bd7-b1b2-3d5dc10aff9d.png" width="300"/>
+
+The idea is very simple: pick up 2 colors that are on the opposite sides of wheels and you will be good. For example:
+
+- aqua and yellow
+- violet and green
+- light blue and orange.
+
+Of course, it's not necessarily to follow strict colors, but the tints could be selected in the same way.
 
