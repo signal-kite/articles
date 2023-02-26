@@ -30,5 +30,7 @@ There pretty common principles from the leading designers that will help you wit
 #### 2.2. How to choose a palette
 When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (usually they are white or grey). But if you picked 2 main colors, use one as main (for background or big elements) and the second one - for small elements (underlining, small dots, or the first capital letters.
 
-To find the colors that will 
+To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: https://en.wikipedia.org/wiki/Color_wheel
+
+![image](https://user-images.githubusercontent.com/125164513/221445007-414f91ac-548e-4bd7-b1b2-3d5dc10aff9d.png)
 
