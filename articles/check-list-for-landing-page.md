@@ -72,6 +72,8 @@ We found these free icon sets the best choice:
 
 Also frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
 
+#### 6. Background
+
 #### 6. Using frameworks
 Frameworks are great but don't forget to change the design. We saw so many similar-looking websites that would look great if they would be different.
 Frameworks not only help make the website development easier and fater but also help with responsiveness.
@@ -83,3 +85,12 @@ Some popular frameworks:
 The big list of great frameworks can be found here: https://github.com/troxler/awesome-css-frameworks
 
 #### 7. Responsiveness
+Nowadays, the mobile devices are used for browsing the Internet. So, the responsiveness is crucially important for websites.
+Usually, it can be done with [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) but web frameworks already solved this problem for you so you don't need to (see the list in the previous point). 
+The modern browsers allow checking your website on small screens, for example, how it can be done on Chrome:
+
+![image](https://user-images.githubusercontent.com/125164513/221448904-c282dcd5-a6b0-4e17-8632-aa2f70dfc99e.png)
+
+**Do not forget to check all the elements like buttons, links, menues.**
+
+
