@@ -55,3 +55,19 @@ and
 Don't do that!
 But what you can do is to borrow the ideas, layout, designs. "Borrow" means you do not blatantly copy but just use the ideas and apply to your own website.
 2 great sources of inspirations: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
+
+#### 4. Logo
+If it's your first project it's totally fine to have a simple, homemade logo. Some ideas on how to create it:
+
+- hire a freelancer on https://www.freelancer.com/
+- use combination of letters
+- use icons
+- ask [Midjourney](https://www.midjourney.com/) to generate it.
+
+#### 5. Small elements
+Icons, dots, arrows and other small elements make the website bright and lively. But don't overuse it. 
+We found these free icon sets the best choice:
+- [Tabler Icons](https://tabler-icons.io/) - 3400 icons
+- [FontAwesome](https://fontawesome.com/) - 2020 icons.
+
+Also frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
