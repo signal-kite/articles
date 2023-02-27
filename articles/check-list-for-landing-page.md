@@ -1,5 +1,7 @@
 # 25 things to check when preparing a landing page for a launch
 
+**Warning! This article may have opinions you don't agree with.**
+
 Before you launch your landing page, take time to check all these things. Some of them look pretty minor and unsignificant but can impact the effect your LP will have and it's not only about amount your visitors. The landing page should:
 
 - have nice, catchy design and graphics
@@ -27,7 +29,7 @@ There pretty common principles from the leading designers that will help you wit
 - do not use very contrast colors together (like yellow and green, red and blue, and so on)
 - do not use low contrast colors together (like light grey on light black)
 
-#### 2.2. How to choose a palette
+#### 2.1. How to choose a palette
 When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (usually they are white or grey). But if you picked 2 main colors, use one as main (for background or big elements) and the second one - for small elements (underlining, small dots, or the first capital letters.
 
 To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: https://en.wikipedia.org/wiki/Color_wheel
@@ -42,3 +44,14 @@ The idea is very simple: pick up 2 colors that are on the opposite sides of whee
 
 Of course, it's not necessarily to follow strict colors, but the tints could be selected in the same way.
 
+### 3. Main design
+Do not copy the design of other websites, especially popular ones. First of all, your website will look the same, secondly, sometimes the design is pretty controversial and copying is always too obvious what makes bad impression. The example: [Gumroad website](https://gumroad.com/). To us, they only can use such tasteless style because they are now big and popular. But if you try to copy it, your website could look just a poor copy.
+Compare:
+<img src="https://user-images.githubusercontent.com/125164513/221445546-224e2012-d3db-40f5-a68e-2dffb35d1086.png" width="500"/>
+
+and 
+<img src="https://user-images.githubusercontent.com/125164513/221445686-e50abf0a-7df7-4d65-aa4b-fe7cbf3f5946.png" width="500"/>
+
+Don't do that!
+But what you can do is to borrow the ideas, layout, designs. "Borrow" means you do not blatantly copy but just use the ideas and apply to your own website.
+2 great sources of inspirations: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
