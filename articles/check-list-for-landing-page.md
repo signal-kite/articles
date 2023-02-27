@@ -71,3 +71,15 @@ We found these free icon sets the best choice:
 - [FontAwesome](https://fontawesome.com/) - 2020 icons.
 
 Also frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
+
+#### 6. Using frameworks
+Frameworks are great but don't forget to change the design. We saw so many similar-looking websites that would look great if they would be different.
+Frameworks not only help make the website development easier and fater but also help with responsiveness.
+Some popular frameworks:
+- [Bootstrap](https://getbootstrap.com/)
+- [Bulma](https://bulma.io/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+The big list of great frameworks can be found here: https://github.com/troxler/awesome-css-frameworks
+
+#### 7. Responsiveness
