@@ -73,6 +73,11 @@ We found these free icon sets the best choice:
 Also frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
 
 #### 6. Background
+Can be anything: an image, pattern, or just a color. Just remember that it should not distract the user's attention. 
+
+#### 7. Fonts
+The main designers' rule is: no more than 2 different font families and no more than 4 different styles totally.
+You can find free and easy-to-use fonts at [Google Fonts](https://fonts.google.com/).
 
 #### 6. Using frameworks
 Frameworks are great but don't forget to change the design. We saw so many similar-looking websites that would look great if they would be different.
@@ -92,5 +97,7 @@ The modern browsers allow checking your website on small screens, for example, h
 ![image](https://user-images.githubusercontent.com/125164513/221448904-c282dcd5-a6b0-4e17-8632-aa2f70dfc99e.png)
 
 **Do not forget to check all the elements like buttons, links, menues.**
+
+#### N. Illustrations
 
 
