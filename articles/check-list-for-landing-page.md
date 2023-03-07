@@ -23,6 +23,10 @@ You can hire a freelance photographer or illustrator, for example here: https://
 
 Another source of great free illustrations (that are actually not free) is [Adobe Stock](https://stock.adobe.com/). The trick is to use their free trial that allows you to download 10 free resources. Be careful though, not all of them are great (we found "seamless patterns" not seamless at all, for example).
 
+A couple of other sources of free graphics:
+- [LapaNinja free illustrations](https://www.lapa.ninja/freebies/illustrations/)
+- [Storyset](https://storyset.com/)
+
 ### 2. Colors
 There pretty common principles from the leading designers that will help you with coloring even if you (like us) are not designer al all:
 
@@ -45,14 +49,14 @@ The idea is very simple: pick up 2 colors that are on the opposite sides of whee
 Of course, it's not necessarily to follow strict colors, but the tints could be selected in the same way.
 
 ### 3. Main design
-Do not copy the design of other websites, especially popular ones. First of all, your website will look the same, secondly, sometimes the design is pretty controversial and copying is always too obvious what makes bad impression. The example: [Gumroad website](https://gumroad.com/). To us, they only can use such tasteless style because they are now big and popular. But if you try to copy it, your website could look just a poor copy.
+Do not copy the design of other websites, especially popular ones. First of all, your website will look the same, secondly, sometimes the design is pretty controversial and copying is always too obvious what makes bad impression. The example: [Gumroad website](https://gumroad.com/). If you try to copy it, your website could look just a poor copy.
 Compare:
 <img src="https://user-images.githubusercontent.com/125164513/221445546-224e2012-d3db-40f5-a68e-2dffb35d1086.png" width="500"/>
 
 and 
 <img src="https://user-images.githubusercontent.com/125164513/221445686-e50abf0a-7df7-4d65-aa4b-fe7cbf3f5946.png" width="500"/>
 
-Don't do that!
+**Don't do that!**
 But what you can do is to borrow the ideas, layout, designs. "Borrow" means you do not blatantly copy but just use the ideas and apply to your own website.
 2 great sources of inspirations: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
 
@@ -98,6 +102,27 @@ The modern browsers allow checking your website on small screens, for example, h
 
 **Do not forget to check all the elements like buttons, links, menues.**
 
-#### N. Illustrations
+#### N. Favicon
+Many experts think you can launch without a favicon. Sure, you can but trust us, a website without a favicon looks so amateurish that it can affect the results of launch.
+##### What is a favicon
+It's a small picture shown on the browser's tab:
+![image](https://user-images.githubusercontent.com/125164513/223312093-6d222b15-3f17-4449-bd48-85da8c40d3c6.png)
 
+##### What size is that?
+It should be 16x16.
+
+##### Which extension is the file?
+Actually, it can be anything: .ico, .png, .jpg and so on but for best compatibility use .ico.
+
+##### How to make it?
+Usually it's a smaller copy of your logo. Create a square logo and resize it into your favorite editor. Then save it as .ico. If your editor can't save a graphical file as .ico, use any online tool, for example, this free popular tool [CloudConvert](https://cloudconvert.com/png-to-ico).
+
+##### Where to put it?
+You can put it anywhere in your website but for the best results, copy it into the root folder. The file should be called favicon.ico.
+
+##### How to insert it?
+In your HTML file add the following code (inside the "<head>" tag):
+```
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+```
 
