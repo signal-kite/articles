@@ -121,7 +121,7 @@ Usually it's a smaller copy of your logo. Create a square logo and resize it int
 You can put it anywhere in your website but for the best results, copy it into the root folder. The file should be called favicon.ico.
 
 ##### How to insert it?
-In your HTML file add the following code (inside the "<head>" tag):
+In your HTML file add the following code (inside the "&lt;head&gt;" tag):
 ```
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 ```
