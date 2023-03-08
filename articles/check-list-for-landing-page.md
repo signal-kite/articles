@@ -132,12 +132,32 @@ In your HTML file add the following code (inside the "&lt;head&gt;" tag):
 There are many articles explaining what to put there but we like [this comprehensive guide by Julian Shapiro](https://www.julian.com/guide/startup/landing-pages).
 Shortly speaking, the header should describe what your product does and the subheader should give the idea on how.
 
-_Hint: Use ChatGPT to proofread and even generate good hero texts!_
+_Tip: Use ChatGPT to proofread and even generate good hero texts!_
+
+#### 12. CTA
+CTA or "call-to-action" is a button or link prompting a user do something right now. For example, it may be a link to the registration page, or a form to leave their email (we discuss this form in the Functionality section). It's a good idea to put several buttons or forms on the page but do not overuse it.
+
+#### 13. Features? No!
+We see so many landing pages that are focused on their features that we often loose the whole purpose of the service or tool. Instead, it's always better to explain how your product makes the users' lives easier. Which does it solve? how effectively? faster? 
+To make the message clear you need to understand which users you are targeted to and solve _their_ problems. Always ask "why" until you gain the core problem to be solved.
+##### The example of asking "why"
+A service
 
 
 ## 3. SEO and social media
 
-## 4. All the minor things that are worth to chek
+## 4. Functionality
+
+#### Email form
+Always prompt a user to do something. If you have only a landing and no product yet, you usually wants them to leave their email. You can program it on your own (if you can code, it's a pretty easy task - for example, you can add a simple server code that just sends you email with the user's email) or use a third-party service. We tried several and our latest choice is [Sender](https://www.sender.net/). Their pricing is nice and their support is great and fast (if you really need it).
+
+#### Survey
+Another popular form of validation the idea or collecting opinions are surveys. The simple, effective and free tool is Google Forms.
+##### Some tips
+1. But don't overuse it! Do not ask too many questions and don't ask personal questions (like phone number and name) if you really don't need them.
+2. If you collect email/name don't make these fields mandatory.
+
+## 4. All the minor things that are worth to check
 ##### Broken links
 Check all the links you have on your page (they can be found everywhere but I often see then in the footer). Sometimes founders would like to add stubs leading to the same page (like links "About" or "How it works") but I wouldn't do that - it makes the website less truthful.
 
