@@ -141,7 +141,14 @@ CTA or "call-to-action" is a button or link prompting a user do something right 
 We see so many landing pages that are focused on their features that we often loose the whole purpose of the service or tool. Instead, it's always better to explain how your product makes the users' lives easier. Which does it solve? how effectively? faster? 
 To make the message clear you need to understand which users you are targeted to and solve _their_ problems. Always ask "why" until you gain the core problem to be solved.
 ##### The example of asking "why"
-A service
+A web tool helps with memorizing words in a foreign language. One of the features they described was "easy-to-use innovative flash cards" what said nothing to us. Do we really need an "innovative" flash cards? How does it help? We started asking "why".
+1. Why do wee need the innovative flash cards? - They helps you to memorize words 35-55% faster.
+2. Is this number significant? - Yes, you will spend a half less time to memorize words, or you will be able to memorize twice words for the same time.
+3. Do we need to memorize them faster? - Yes, because you have many other things to memorize and prepare.
+4. Why? - Because you are preparing to the internation certificate exam (the target audience were student preparing for these exams).
+5. Why do we take the exam? - Because you want to move to another country.
+6. Why? - Because you want a better quality of life for you and your family or/and new experience and new friends (let's focus on the second group).
+7. 
 
 
 ## 3. SEO and social media
