@@ -83,7 +83,7 @@ Can be anything: an image, pattern, or just a color. Just remember that it shoul
 The main designers' rule is: no more than 2 different font families and no more than 4 different styles totally.
 You can find free and easy-to-use fonts at [Google Fonts](https://fonts.google.com/).
 
-#### 6. Using frameworks
+#### 8. Using frameworks
 Frameworks are great but don't forget to change the design. We saw so many similar-looking websites that would look great if they would be different.
 Frameworks not only help make the website development easier and fater but also help with responsiveness.
 Some popular frameworks:
@@ -93,7 +93,7 @@ Some popular frameworks:
 
 The big list of great frameworks can be found here: https://github.com/troxler/awesome-css-frameworks
 
-#### 7. Responsiveness
+#### 9. Responsiveness
 Nowadays, the mobile devices are used for browsing the Internet. So, the responsiveness is crucially important for websites.
 Usually, it can be done with [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) but web frameworks already solved this problem for you so you don't need to (see the list in the previous point). 
 The modern browsers allow checking your website on small screens, for example, how it can be done on Chrome:
@@ -102,8 +102,9 @@ The modern browsers allow checking your website on small screens, for example, h
 
 **Do not forget to check all the elements like buttons, links, menues.**
 
-#### N. Favicon
+#### 10. Favicon
 Many experts think you can launch without a favicon. Sure, you can but trust us, a website without a favicon looks so amateurish that it can affect the results of launch.
+##### Q&A
 ##### What is a favicon
 It's a small picture shown on the browser's tab:
 ![image](https://user-images.githubusercontent.com/125164513/223312093-6d222b15-3f17-4449-bd48-85da8c40d3c6.png)
@@ -125,4 +126,19 @@ In your HTML file add the following code (inside the "&lt;head&gt;" tag):
 ```
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 ```
+## 2. Content
 
+#### 11. Hero section
+There are many articles explaining what to put there but we like [this comprehensive guide by Julian Shapiro](https://www.julian.com/guide/startup/landing-pages).
+Shortly speaking, the header should describe what your product does and the subheader should give the idea on how.
+
+_Hint: Use ChatGPT to proofread and even generate good hero texts!_
+
+
+## 3. SEO and social media
+
+## 4. All the minor things that are worth to chek
+##### Broken links
+Check all the links you have on your page (they can be found everywhere but I often see then in the footer). Sometimes founders would like to add stubs leading to the same page (like links "About" or "How it works") but I wouldn't do that - it makes the website less truthful.
+
+##### Page title
