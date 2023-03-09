@@ -148,7 +148,7 @@ A web tool helps with memorizing words in a foreign language. One of the feature
 4. Why? - Because you are preparing to the internation certificate exam (the target audience were student preparing for these exams).
 5. Why do we take the exam? - Because you want to move to another country.
 6. Why? - Because you want a better quality of life for you and your family or/and new experience and new friends (let's focus on the second group).
-7. 
+7. Now, we can change the feature from "easy-to-use innovative flash cards" to "innovative flash cards "
 
 
 ## 3. SEO and social media
