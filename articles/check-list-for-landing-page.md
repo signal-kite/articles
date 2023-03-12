@@ -49,15 +49,8 @@ The idea is very simple: pick up 2 colors that are on the opposite sides of whee
 Of course, it's not necessarily to follow strict colors, but the tints could be selected in the same way.
 
 ### 3. Main design
-Do not copy the design of other websites, especially popular ones. First of all, your website will look the same, secondly, sometimes the design is pretty controversial and copying is always too obvious what makes bad impression. The example: [Gumroad website](https://gumroad.com/). If you try to copy it, your website could look just a poor copy.
-Compare:
-<img src="https://user-images.githubusercontent.com/125164513/221445546-224e2012-d3db-40f5-a68e-2dffb35d1086.png" width="500"/>
+If you are not a designer or don't want to hire a designer (or you can't) there is only one way to make a nice design: find a website you like and _borrow_ their idea. "Borrow" doesn't mean blatant copying, not at all. It means you may reproduce their findings at your design, but nothing more. Do not copy colors, CSS, texts.
 
-and 
-<img src="https://user-images.githubusercontent.com/125164513/221445686-e50abf0a-7df7-4d65-aa4b-fe7cbf3f5946.png" width="500"/>
-
-**Don't do that!**
-But what you can do is to borrow the ideas, layout, designs. "Borrow" means you do not blatantly copy but just use the ideas and apply to your own website.
 2 great sources of inspirations: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
 
 #### 4. Logo
@@ -69,7 +62,8 @@ If it's your first project it's totally fine to have a simple, homemade logo. So
 - ask [Midjourney](https://www.midjourney.com/) to generate it.
 
 #### 5. Small elements
-Icons, dots, arrows and other small elements make the website bright and lively. But don't overuse it. 
+Icons, dots, arrows can give your website interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojii. But it's a bit tricky: because they are just text symbols, they don't look appealing if using as a text. Instead, consider using the colorful version of them. Google fonts has an open-source colorful Emoji font: https://fonts.google.com/noto/specimen/Noto+Color+Emoji
+
 We found these free icon sets the best choice:
 - [Tabler Icons](https://tabler-icons.io/) - 3400 icons
 - [FontAwesome](https://fontawesome.com/) - 2020 icons.
@@ -146,6 +140,27 @@ A web tool helps with memorizing words in a foreign language. One of the feature
 #### Stories are underrated
 Althought every single marketing book says the stories are very important, people for some reason don't use them as they could. So, one or two user stories would be great (especially if you don't have any other proves or testimonials).
 
+#### Objections
+It's a good idea to find the popular objections and give the answers. You can put them in the FAQ section. The popular objections are:
+
+- Why is your product better than X?
+- Why is your product cheaper/more expensive than X?
+- Your product looks too complicated/simple
+- How can your product help me?
+- What are preferenses using your product over using X?
+
+#### Pictures/screenshots
+It's a good idea to show the real screenshots instead of abstract pictures showing people doing something on a giant screen... that could look nice but it will not give a potential user an idea about the real product. If you don't have a product yes, show sketches or drawn prototype. For prototyping you can use many free products, for example:
+- [JustInMind](https://www.justinmind.com/)
+- [MockFlow](https://www.mockflow.com/)
+- [Protopie](https://www.protopie.io/)
+
+
+#### Grammar
+Don't forget to check the texts on your website before lauch. Here is how you can do it:
+- hire a professional proofreader
+- use [Grammarly](https://www.grammarly.com/) - their free plan is very comprehensive
+- ask [ChatGPT](https://chat.openai.com/auth/login) proofread your text
 
 ## 3. SEO and social media
 
