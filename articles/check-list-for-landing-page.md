@@ -150,7 +150,14 @@ Althought every single marketing book says the stories are very important, peopl
 ## 3. SEO and social media
 
 #### Meta tags
-When you launch your website, even if it's just one page and very simple, it's important to make it discoverable by search engines as soon as possible.
+When you launch your website, even if it's just one page and very simple, it's important to make it discoverable by search engines as soon as possible. Meta tags are special tags that usually are added to the &lt;head&gt; section of a web page. Provide the following tags and make sure they have the correct information:
+
+- &lt;meta name="description" content="Description of the page"&gt;
+- &lt;meta name="keywords" content="Keywords that will help to find your website"&gt;
+- &lt;meta name="author" content="The company or author name"&gt;
+
+#### Tags for social networks
+When you publish the link on Twitter, Facebook, and other media, the link will be rendered.
 
 ## 4. Functionality
 
@@ -168,3 +175,5 @@ Another popular form of validation the idea or collecting opinions are surveys. 
 Check all the links you have on your page (they can be found everywhere but I often see then in the footer). Sometimes founders would like to add stubs leading to the same page (like links "About" or "How it works") but I wouldn't do that - it makes the website less truthful.
 
 ##### Page title
+
+#### Analytics/issue monitoring
