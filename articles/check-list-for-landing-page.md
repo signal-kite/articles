@@ -137,21 +137,20 @@ _Tip: Use ChatGPT to proofread and even generate good hero texts!_
 #### 12. CTA
 CTA or "call-to-action" is a button or link prompting a user do something right now. For example, it may be a link to the registration page, or a form to leave their email (we discuss this form in the Functionality section). It's a good idea to put several buttons or forms on the page but do not overuse it.
 
-#### 13. Features? No!
+#### 13. Features? No. Profits!
 We see so many landing pages that are focused on their features that we often loose the whole purpose of the service or tool. Instead, it's always better to explain how your product makes the users' lives easier. Which does it solve? how effectively? faster? 
 To make the message clear you need to understand which users you are targeted to and solve _their_ problems. Always ask "why" until you gain the core problem to be solved.
-##### The example of asking "why"
-A web tool helps with memorizing words in a foreign language. One of the features they described was "easy-to-use innovative flash cards" what said nothing to us. Do we really need an "innovative" flash cards? How does it help? We started asking "why".
-1. Why do wee need the innovative flash cards? - They helps you to memorize words 35-55% faster.
-2. Is this number significant? - Yes, you will spend a half less time to memorize words, or you will be able to memorize twice words for the same time.
-3. Do we need to memorize them faster? - Yes, because you have many other things to memorize and prepare.
-4. Why? - Because you are preparing to the internation certificate exam (the target audience were student preparing for these exams).
-5. Why do we take the exam? - Because you want to move to another country.
-6. Why? - Because you want a better quality of life for you and your family or/and new experience and new friends (let's focus on the second group).
-7. Now, we can change the feature from "easy-to-use innovative flash cards" to "innovative flash cards "
+##### The example
+A web tool helps with memorizing words in a foreign language. One of the features they described was "easy-to-use innovative flash cards" what said nothing to us. Do we really need an "innovative" flash cards? How does it help? We started asking "why" and it turned out that "innovative" flash cards help to memorize words faster therefore founders need to mention it (and they can get rid off the "innovative" word :).
+
+#### Stories are underrated
+Althought every single marketing book says the stories are very important, people for some reason don't use them as they could. So, one or two user stories would be great (especially if you don't have any other proves or testimonials).
 
 
 ## 3. SEO and social media
+
+#### Meta tags
+When you launch your website, even if it's just one page and very simple, it's important to make it discoverable by search engines as soon as possible.
 
 ## 4. Functionality
 
