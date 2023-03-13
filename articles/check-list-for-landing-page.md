@@ -213,7 +213,7 @@ If you see some strange message like you need to provide "fb:app_id" click the S
 
 ## 4. Functionality
 
-#### Website performance
+#### Website performance and issue monitoring
 Sometimes, founders are so focused on decorating the website with nice graphics that they forget the performance may suffer. As a result, the users will not be patient and can leave your website before all the resources load. Here what you can do:
 
 1. Check the website's graphics and optimize heavy pictures. It can be done in old good Photoshop or using an online service, for example, [TinyPNG](https://tinypng.com/). _Keep in mind, JPG pictures are better for photos whereas PNG are more suitable for images with simple graphics and text._ JPG pictures don't support the transparency.
@@ -234,5 +234,10 @@ Another popular form of validation the idea or collecting opinions are surveys. 
 Check all the links you have on your page (they can be found everywhere but I often see then in the footer). Sometimes founders would like to add stubs leading to the same page (like links "About" or "How it works") but I wouldn't do that - it makes the website less truthful.
 
 ##### Page title
+When people hover the tab of their browser with a mouse, they will see something like that:
+![image](https://user-images.githubusercontent.com/125164513/224825757-57731b17-495c-43d5-89c7-06355237b335.png)
+To provide this additional text, just add a &lt;title&gt; tag to your head section:
+```
+<title>Signal Kite - Simple Monitoring Tool For Your Website</title>
+```
 
-#### Analytics/issue monitoring
