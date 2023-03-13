@@ -193,7 +193,23 @@ A couple of important notes:
 2. To make sure the preview is rendered properly use some Twitter validation tool. Twitter itself has a preview tool but since 2022 the rendering the preview images functionality was removed (nobody knows why) so, instead use free third-party tools, for example, [Tweetpick validator](https://tweetpik.com/twitter-card-validator).
 
 ##### Facebook
-To be able to render the link preview when posting on Facebook, you use the same OpenGraph (og) metatags and also you need to create a FB application. You can find a guide how to do that in [FB documentation](https://developers.facebook.com/docs/development/create-an-app/).
+To be able to render the link preview when posting on Facebook, you use the same OpenGraph (og) metatags and also you need to create a FB application.
+This is how to do that:
+1. Open the [Facebook page for developers](https://developers.facebook.com/apps/) and click the Create app button.
+2. Select Business app type and click the Next button: ![image](https://user-images.githubusercontent.com/125164513/224818759-f599e033-583a-4fa0-84c1-f0d02f1427d7.png)
+3. Enter your app name and email, leave the latest option unselected: ![image](https://user-images.githubusercontent.com/125164513/224819109-584514e2-c88f-40c1-a067-27adbd4b8e91.png)
+4. You will be redirected to the application page. In the left menu, select Settings --> Basic then copy App ID:
+![image](https://user-images.githubusercontent.com/125164513/224819774-22d34482-47cb-4286-9630-5a52cd262f92.png)
+5. In the &lt;head&gt; section of a web page insert the following metatag:
+```
+<meta property="fb:app_id" content="YourAppId">
+```
+6. To make sure it's working, use [the Facebook debugger](https://developers.facebook.com/tools/debug).
+Enter your full URL in the field and click the Debug button.
+If you see some strange message like you need to provide "fb:app_id" click the Scrape Again button, you should see something like that:
+![image](https://user-images.githubusercontent.com/125164513/224822453-b1e9bad2-ebcc-45ae-ac74-ef348670c7ef.png
+
+
 
 ## 4. Functionality
 
