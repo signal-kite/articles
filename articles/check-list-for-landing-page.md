@@ -1,6 +1,6 @@
 # 25 things to check when preparing a landing page for a launch
 
-**Warning! This article may have opinions you don't agree with.**
+_Cover photo by <a href="https://unsplash.com/es/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/photos/sxiSod0tyYQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>_
 
 Before you launch your landing page, take time to check all these things. Some of them look pretty minor and unsignificant but can impact the effect your LP will have and it's not only about amount your visitors. The landing page should:
 
