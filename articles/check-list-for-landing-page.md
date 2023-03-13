@@ -172,9 +172,37 @@ When you launch your website, even if it's just one page and very simple, it's i
 - &lt;meta name="author" content="The company or author name"&gt;
 
 #### Tags for social networks
-When you publish the link on Twitter, Facebook, and other media, the link will be rendered.
+When you publish the link on Twitter, Facebook, and other media, the link will be rendered. For example, this is how our link is rendered when mentioned in a tweet:
+![image](https://user-images.githubusercontent.com/125164513/224803628-7daafaf7-bc06-406c-ace5-b2c0ef426fa4.png)
+
+##### Twitter
+There is no secret: you just need to provide special metatags and the preview image. Twitter calls such a preview "a card" and it's described in [their documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started). Basically, you need to add the following metatags to your website &lt;head&gt; section:
+
+```
+<meta name="twitter:card"              content="summary_large_image">
+<meta name="twitter:site"              content="@YourTwitterHandle">
+
+
+<meta property="og:url"                content="FullPageURL" />
+<meta property="og:title"              content="PageTitle" />
+<meta property="og:description"        content="PageDescription" />
+<meta property="og:image"              content="PreviewPageURL" />
+```
+A couple of important notes:
+1. The preview page URL should be full - so no relative paths like "/images/mypreview.png" would work.
+2. To make sure the preview is rendered properly use some Twitter validation tool. Twitter itself has a preview tool but since 2022 the rendering the preview images functionality was removed (nobody knows why) so, instead use free third-party tools, for example, [Tweetpick validator](https://tweetpik.com/twitter-card-validator).
+
+##### Facebook
+To be able to render the link preview when posting on Facebook, you use the same OpenGraph (og) metatags and also you need to create a FB application. You can find a guide how to do that in [FB documentation](https://developers.facebook.com/docs/development/create-an-app/).
 
 ## 4. Functionality
+
+#### Website performance
+Sometimes, founders are so focused on decorating the website with nice graphics that they forget the performance may suffer. As a result, the users will not be patient and can leave your website before all the resources load. Here what you can do:
+
+1. Check the website's graphics and optimize heavy pictures. It can be done in old good Photoshop or using an online service, for example, [TinyPNG](https://tinypng.com/). _Keep in mind, JPG pictures are better for photos whereas PNG are more suitable for images with simple graphics and text._ JPG pictures don't support the transparency.
+2. Use some monitoring tool showing load or even non-working resources. We found our own tool [SignalKite](https://signalkite.com) the best choice: it's free, simple to install and use, and simple but powerful possibilities for analyzing events and errors. _Remember the performance at your users' computers may differ from what you see at yours!_
+
 
 #### Email form
 Always prompt a user to do something. If you have only a landing and no product yet, you usually wants them to leave their email. You can program it on your own (if you can code, it's a pretty easy task - for example, you can add a simple server code that just sends you email with the user's email) or use a third-party service. We tried several and our latest choice is [Sender](https://www.sender.net/). Their pricing is nice and their support is great and fast (if you really need it).
