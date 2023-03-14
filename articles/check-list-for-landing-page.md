@@ -189,11 +189,6 @@ There is no secret: you just need to provide special metatags and the preview im
 
 ```
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@YourTwitterHandle">
-<meta property="og:url" content="FullPageURL" />
-<meta property="og:title" content="PageTitle" />
-<meta property="og:description" content="PageDescription" />
-<meta property="og:image" content="PreviewPageURL" />
 ```
 
 A couple of important notes:
