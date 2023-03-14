@@ -58,41 +58,41 @@ The idea is very simple: pick up 2 colors that are on opposite sides of the whee
 - violet and green
 - light blue and orange.
 
-Of course, it's not necessarily to follow strict colors, but the tints could be selected in the same way.
+Of course, it's not necessary to follow strict colors, but the tints could be selected in the same way.
 
-### 5. Layout and overal design
-If you are not a designer or don't want to hire a designer (or you can't) there is only one way to make a nice design: find a website you like and _borrow_ their idea. "Borrow" doesn't mean blatant copying, not at all. It means you may reproduce their findings at your design, but nothing more. Do not copy colors, CSS, texts.
+### 5. Layout and overall design
+If you are not a designer or don't want to hire a designer (or you can't) there is only one way to make a nice design: find a website you like and _borrow_ their idea. "Borrow" doesn't mean blatant copying, not at all. It means you may reproduce their findings in your design, but nothing more. Do not copy colors, CSS, or texts.
 
-2 great sources of inspirations: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
+2 great sources of inspiration: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
 
 ### 6. Logo
 If it's your first project it's totally fine to have a simple, homemade logo. Some ideas on how to create it:
 
 - hire a freelancer on [Freelancer](https://www.freelancer.com/)
-- use combination of letters
+- use a letter or a combination of letters
 - use icons
-- ask [Midjourney](https://www.midjourney.com/) to generate it.
+- ask [Midjourney](https://www.midjourney.com/) to generate it (you can generate about 25 designs for free).
 
 ### 7. Small elements
-Icons, dots, arrows can give your website interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojii. But it's a bit tricky: because they are just text symbols, they don't look appealing if using as a text. Instead, consider using the colorful version of them. Google fonts has an open-source [colorful Emoji font](https://fonts.google.com/noto/specimen/Noto+Color+Emoji).
+Icons, dots, an arrows can give your website an interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojis. But it's a bit tricky: because they are just text symbols, they don't look appealing if used as text. Instead, consider using the colorful version of them. Google fonts have an open-source [colorful Emoji font](https://fonts.google.com/noto/specimen/Noto+Color+Emoji).
 
 We found these free icon sets the best choice:
 
 - [Tabler Icons](https://tabler-icons.io/) - 3400 icons
 - [FontAwesome](https://fontawesome.com/) - 2020 icons.
 
-Also frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
+Also, frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
 
 ### 8. Background
 Can be anything: an image, pattern, or just a color. Just remember that it should not distract the user's attention. 
 
 ### 9. Fonts
-The main designers' rule is: no more than 2 different font families and no more than 4 different styles totally.
+The main designers' rule: no more than 2 different font families and no more than 4 different styles totally.
 You can find free and easy-to-use fonts at [Google Fonts](https://fonts.google.com/).
 
 ### 10. Using frameworks
 Frameworks are great but don't forget to change the design. We saw so many similar-looking websites that would look great if they would be different.
-Frameworks not only help make the website development easier and fater but also help with responsiveness.
+Frameworks not only help make website development easier and faster but also help with responsiveness.
 Some popular frameworks:
 
 - [Bootstrap](https://getbootstrap.com/)
@@ -102,17 +102,17 @@ Some popular frameworks:
 The big list of great frameworks can be found here: [https://github.com/troxler/awesome-css-frameworks](https://github.com/troxler/awesome-css-frameworks)
 
 ### 11. Responsiveness
-Nowadays, the mobile devices are used for browsing the Internet. So, the responsiveness is crucially important for websites.
+Nowadays, mobile devices are used for browsing the Internet. So, responsiveness is crucially important for websites.
 Usually, it can be done with [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) but web frameworks already solved this problem for you so you don't need to (see the list in the previous point). 
 
-The modern browsers allow checking your website on small screens, for example, how it can be done on Chrome:
+Modern browsers allow checking your website on small screens, for example, how it can be done on Chrome:
 
 ![image](https://user-images.githubusercontent.com/125164513/221448904-c282dcd5-a6b0-4e17-8632-aa2f70dfc99e.png)
 
-**Do not forget to check all the elements like buttons, links, menues.**
+**Do not forget to check all the elements like buttons, links, and menues.**
 
 ### 12. Favicon
-Many experts think you can launch without a favicon. Sure, you can but trust us, a website without a favicon looks so amateurish that it can affect the results of launch.
+Many experts think you can launch without a favicon. Sure, you can but trust us, a website without a favicon looks so amateurish that it can affect the results of the launch.
 #### Q&A
 ##### What is a favicon?
 It's a small picture shown on the browser's tab:
@@ -122,13 +122,13 @@ It's a small picture shown on the browser's tab:
 It should be 16x16.
 
 ##### Which extension is the file?
-Actually, it can be anything: .ico, .png, .jpg and so on but for best compatibility use .ico.
+It can be anything: .ico, .png, .jpg, and so on but for best compatibility use .ico.
 
 ##### How to make it?
-Usually it's a smaller copy of your logo. Create a square logo and resize it into your favorite editor. Then save it as .ico. If your editor can't save a graphical file as .ico, use any online tool, for example, this free popular tool [CloudConvert](https://cloudconvert.com/png-to-ico).
+Usually, it's a smaller copy of your logo. Create a square logo and resize it into your favorite editor. Then save it as .ico. If your editor can't save a graphical file as .ico, use any online tool, for example, this free popular tool [CloudConvert](https://cloudconvert.com/png-to-ico).
 
 ##### Where to put it?
-You can put it anywhere in your website but for the best results, copy it into the root folder. The file should be called favicon.ico.
+You can put it anywhere on your website but for the best results, copy it into the root folder. The file should be called favicon.ico.
 
 ##### How to insert it?
 In your HTML file add the following code (inside the "&lt;head&gt;" tag):
@@ -139,22 +139,22 @@ In your HTML file add the following code (inside the "&lt;head&gt;" tag):
 
 ### 13. Hero section
 There are many articles explaining what to put there but we like [this comprehensive guide by Julian Shapiro](https://www.julian.com/guide/startup/landing-pages).
-Shortly speaking, the header should describe what your product does and the subheader should give the idea on how.
+Shortly speaking, the header should describe what your product does and the subheader should give an idea of how.
 
 _Tip: Use ChatGPT to proofread and even generate good hero texts!_
 
 ### 14. CTA
-CTA or "call-to-action" is a button or link prompting a user do something right now. For example, it may be a link to the registration page, or a form to leave their email (we discuss this form in the Functionality section). It's a good idea to put several buttons or forms on the page but do not overuse it.
+CTA or "call-to-action" is a button or link prompting a user to do something right now. For example, it may be a link to the registration page, or a form to leave their email (we discuss this form in the Functionality section). It's a good idea to put several buttons or forms on the page but do not overuse them.
 
 ### 15. Features? No. Profits!
-We see so many landing pages that are focused on their features that we often loose the whole purpose of the service or tool. Instead, it's always better to explain how your product makes the users' lives easier. Which does it solve? how effectively? faster? 
+We see so many landing pages that are focused on their features that we often lose the whole purpose of the service or tool. Instead, it's always better to explain how your product makes the users' lives easier. Which does it solve? how effectively? faster? 
 To make the message clear you need to understand which users you are targeted to and solve _their_ problems. Always ask "why" until you gain the core problem to be solved.
 
 #### The example
-A web tool helps with memorizing words in a foreign language. One of the features they described was "easy-to-use innovative flash cards" what said nothing to us. Do we really need an "innovative" flash cards? How does it help? We started asking "why" and it turned out that "innovative" flash cards help to memorize words faster therefore founders need to mention it (and they can get rid off the "innovative" word :).
+A web tool helps with memorizing words in a foreign language. One of the features they described was "easy-to-use innovative flash cards" which said nothing to us. Do we need "innovative" flashcards? How does it help? We started asking "why" and it turned out that "innovative" flash cards help to memorize words faster, therefore, founders need to mention it (and they can get rid of the "innovative" word :).
 
 ### 16. Stories
-Althought every single marketing book says the stories are very important, people for some reason don't use them as they could. So, one or two user stories would be great (especially if you don't have any other proves or testimonials).
+Although every single marketing book says the stories are very important, people for some reason don't use them as they could. So, one or two user stories would be great (especially if you don't have any other proof or testimonials).
 
 ### 17. Objections
 It's a good idea to find the popular objections and give the answers. You can put them in the FAQ section. The popular objections are:
@@ -163,14 +163,14 @@ It's a good idea to find the popular objections and give the answers. You can pu
 - Why is your product cheaper/more expensive than X?
 - Your product looks too complicated/simple
 - How can your product help me?
-- What are preferenses using your product over using X?
+- What are the preferences for using your product over using X?
 
 ### 18. Grammar
-Don't forget to check the texts on your website before lauch. Here is how you can do it:
+Don't forget to check the texts on your website before launch. Here is how you can do it:
 
 - hire a professional editor
 - use [Grammarly](https://www.grammarly.com/) - their free plan is very comprehensive
-- ask [ChatGPT](https://chat.openai.com/auth/login) proofread your text
+- ask [ChatGPT](https://chat.openai.com/auth/login) to proofread your text
 
 ## SEO and social media
 
@@ -184,7 +184,7 @@ When you launch your website, even if it's just one page and very simple, it's i
 ```
 
 ### 20. Page title
-When people hover the tab of their browser with a mouse, they will see something like that:
+When people hover over the tab of their browser with a mouse, they will see something like that: 
 ![image](https://user-images.githubusercontent.com/125164513/224825757-57731b17-495c-43d5-89c7-06355237b335.png)
 To provide this additional text, just add a &lt;title&gt; tag to your head section:
 ```
@@ -196,7 +196,7 @@ When you publish the link on Twitter, Facebook, and other media, the link will b
 ![image](https://user-images.githubusercontent.com/125164513/224803628-7daafaf7-bc06-406c-ace5-b2c0ef426fa4.png)
 
 #### Twitter
-There is no secret: you just need to provide special metatags and the preview image. Twitter calls such a preview "a card" and it's described in [their documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started). Basically, you need to add the following metatags to your website &lt;head&gt; section:
+There is no secret: you just need to provide special metatags and the preview image. Twitter calls such a preview "a card" and it's described in [their documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started). You need to add the following metatags to your website &lt;head&gt; section:
 
 ```
 <meta name="twitter:card" content="summary_large_image">
@@ -210,7 +210,7 @@ There is no secret: you just need to provide special metatags and the preview im
 A couple of important notes:
 
 1. The preview page URL should be full - so no relative paths like "/images/mypreview.png" wouldn't work.
-2. To make sure the preview is rendered properly use some Twitter validation tool. Twitter itself has a preview tool but since 2022 the rendering the preview images functionality was removed (nobody knows why) so, instead use free third-party tools, for example, [Tweetpick validator](https://tweetpik.com/twitter-card-validator).
+2. To make sure the preview is rendered properly use some Twitter validation tool. Twitter itself has a preview tool but since 2022 the rendering of the preview images functionality was removed (nobody knows why) so, instead use free third-party tools, for example, [Tweetpick validator](https://tweetpik.com/twitter-card-validator).
 
 #### Facebook
 To be able to render the link preview when posting on Facebook, you use the same OpenGraph (og) metatags and also you need to create a FB application.
@@ -218,7 +218,7 @@ This is how to do that:
 
 1. Open the [Facebook page for developers](https://developers.facebook.com/apps/) and click the Create app button.
 2. Select Business app type and click the Next button: ![image](https://user-images.githubusercontent.com/125164513/224818759-f599e033-583a-4fa0-84c1-f0d02f1427d7.png)
-3. Enter your app name and email, leave the latest option unselected: ![image](https://user-images.githubusercontent.com/125164513/224819109-584514e2-c88f-40c1-a067-27adbd4b8e91.png)
+3. Enter your app name and email, and leave the latest option unselected: ![image](https://user-images.githubusercontent.com/125164513/224819109-584514e2-c88f-40c1-a067-27adbd4b8e91.png)
 4. You will be redirected to the application page. In the left menu, select Settings --> Basic then copy App ID:
 ![image](https://user-images.githubusercontent.com/125164513/224819774-22d34482-47cb-4286-9630-5a52cd262f92.png)
 5. In the &lt;head&gt; section of a web page insert the following metatag:
@@ -231,7 +231,7 @@ If you see some strange message like you need to provide "fb:app_id" click the S
 ![image](https://user-images.githubusercontent.com/125164513/224822453-b1e9bad2-ebcc-45ae-ac74-ef348670c7ef.png)
 
 ### 22. Content, generated by JavaScript
-Be pretty careful with automatically generating content. Modern search engines still can't recognize and index the content it it's generated in the browser. So, if you create or use some content engines, make sure it's generated on the server-side. Another option is to have static web pages but it could be hard to maintain.
+Be pretty careful with automatically generating content. Modern search engines still can't recognize and index the content if it's generated in the browser. So, if you create or use some content engines, make sure it's generated on the server side. Another option is to have static web pages but they could be hard to maintain.
 
 ## Functionality
 
