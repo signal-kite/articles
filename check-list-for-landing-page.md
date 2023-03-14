@@ -2,26 +2,26 @@
 
 _Cover photo by <a href="https://unsplash.com/es/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/photos/sxiSod0tyYQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>_
 
-Before you launch your landing page, take time to check all these things. Some of them look pretty minor and unsignificant but can impact the effect your LP will have and it's not only about amount your visitors. The landing page should:
+Before you launch your landing page, take time to check all these things. Some of them look pretty minor and insignificant but can impact the effect your LP will have and it's not only about the amount your visitors. The landing page should:
 
 - have nice, catchy design and graphics
 - have clear, catchy text
-- make people do something (so called CTA, or call to action)
+- make people do something (so-called CTA, or call to action)
 - make people bookmark the website (to come to it later if they are not interested in it now)
 - be good for search systems (SEO).
 
-We split all these things to check into groups by topic but keep in mind, some of them can be part of other group.
+We split all these things to check into groups by topic but keep in mind, some of them can be part of another group.
 
 ## Design
 
 ### 1. Graphics
-Do not use free graphics like Undraw or Absurd illustrations. Not only they are very overused (what makes your website looking as thousands of others) but they are often misleading, distracting, and taste-less. 
+Do not use free graphics like Undraw or Absurd illustrations. Not only they are very overused (what makes your website looks like thousands of others) but they are often misleading and distracting. 
 
-[Unsplash](https://unsplash.com/) is a great source of free photos. Bu be careful with using them because many photos have already been used thousand times what makes your website look amateurish.
+[Unsplash](https://unsplash.com/) is a great source of free photos. But be careful with using them because many photos have already been used a thousand times which makes your website look amateurish.
 
 You can hire a freelance photographer or illustrator, for example here: [https://www.freelancer.com/](https://www.freelancer.com/). We found this resource pretty affordable and the results satisfying.
 
-Another source of great free illustrations (that are actually not free) is [Adobe Stock](https://stock.adobe.com/). The trick is to use their free trial that allows you to download 10 free resources. Be careful though, not all of them are great (for example, we found "seamless patterns" not seamless at all).
+Another source of great free illustrations (that are actually not free) is [Adobe Stock](https://stock.adobe.com/). The trick is to use their free trial which allows you to download 10 free resources. Be careful though, not all of them are great (for example, we found "seamless patterns" not seamless at all).
 
 A couple of other sources of free graphics:
 
@@ -29,30 +29,30 @@ A couple of other sources of free graphics:
 - [Storyset](https://storyset.com/).
 
 ### 2. Pictures/screenshots
-It's a good idea to show the real screenshots instead of abstract pictures showing people doing something on a giant screen... that could look nice but it will not give a potential user an idea about the real product. If you don't have a product yes, show sketches or drawn prototype. For prototyping you can use many free products, for example:
+It's a good idea to show real screenshots instead of abstract pictures showing people doing something on a giant screen... that could look nice but it will not give a potential user an idea about the real product. If you don't have a product yet, show sketches or a drawn prototype. For prototyping you can use many free products, for example:
 
 - [JustInMind](https://www.justinmind.com/)
 - [MockFlow](https://www.mockflow.com/)
 - [Protopie](https://www.protopie.io/)
 
 ### 3. Colors
-There pretty common principles from the leading designers that will help you with coloring even if you (like us) are not designer al all:
+There are pretty common principles from the leading designers that will help you with coloring even if you (like us) are not a designer at all:
 
-- do not use very contrast colors together (like yellow and green, red and blue, and so on)
+- do not use very contrasting colors together (like yellow and green, red and blue, and so on)
 - do not use low contrast colors together (like light grey on light black)
 
-The example of a design that will burn your eyes:
+An example of a design that will burn your eyes:
 ![image](https://user-images.githubusercontent.com/125164513/224879490-bee62551-46fc-498e-bd60-5a901a3f0888.png)
 
 
 ### 4. How to choose a palette
-When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (usually they are white or grey). But if you picked 2 main colors, use one as main (for background or big elements) and the second one - for small elements (underlining, small dots, or the first capital letters.
+When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (usually they are white or grey). But if you picked 2 main colors, use one as the main (for background or big elements) and the second one - for small elements (to underline, for small dots, or the first capital letters.
 
-To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: [https://en.wikipedia.org/wiki/Color_wheel](https://en.wikipedia.org/wiki/Color_wheel).
+To find the colors that will go together well, use the color wheel. It can be found, for example, here: [https://en.wikipedia.org/wiki/Color_wheel](https://en.wikipedia.org/wiki/Color_wheel).
 
 <img src="https://user-images.githubusercontent.com/125164513/221445007-414f91ac-548e-4bd7-b1b2-3d5dc10aff9d.png" width="300"/>
 
-The idea is very simple: pick up 2 colors that are on the opposite sides of wheels and you will be good. For example:
+The idea is very simple: pick up 2 colors that are on opposite sides of the wheel and you will be good. For example:
 
 - aqua and yellow
 - violet and green
