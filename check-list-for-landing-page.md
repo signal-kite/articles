@@ -236,34 +236,34 @@ Be pretty careful with automatically generating content. Modern search engines s
 ## Functionality
 
 ### 23. Website performance and issue monitoring
-Sometimes, founders are so focused on decorating the website with nice graphics that they forget the performance may suffer. As a result, the users will not be patient and can leave your website before all the resources load. Here what you can do:
+Sometimes, founders are so focused on decorating the website with nice graphics that they forget the performance may suffer. As a result, the users will not be patient and can leave your website before all the resources load. Here is what you can do:
 
-1. Check the website's graphics and optimize heavy pictures. It can be done in old good Photoshop or using an online service, for example, [TinyPNG](https://tinypng.com/). _Keep in mind, JPG pictures are better for photos whereas PNG are more suitable for images with simple graphics and text._ JPG pictures don't support the transparency.
-2. Use some monitoring tool showing load or even non-working resources. We found our own tool [SignalKite](https://signalkite.com) the best choice: it's free, simple to install and use, and simple but powerful possibilities for analyzing events and errors. _Remember the performance at your users' computers may differ from what you see at yours!_
+1. Check the website's graphics and optimize heavy pictures. It can be done in old good Photoshop or using an online service, for example, [TinyPNG](https://tinypng.com/). _Keep in mind, JPG pictures are better for photos whereas PNG format is more suitable for images with simple graphics and text._ JPG pictures don't support transparency.
+2. Use some monitoring tool showing load or even non-working resources. We found our tool [SignalKite](https://signalkite.com) the best choice: it's free, simple to set up and use, and has simple but powerful possibilities for analyzing events and errors. _Remember the performance at your users' computers may differ from what you see at yours!_
 
 
 ### 24. Email form
-Always prompt a user to do something. If you have only a landing and no product yet, you usually wants them to leave their email. You can program it on your own (if you can code, it's a pretty easy task - for example, you can add a simple server code that just sends you email with the user's email) or use a third-party service. We tried several and our latest choice is [Sender](https://www.sender.net/). Their pricing is nice and their support is great and fast (if you really need it).
+Always prompt a user to do something. If you have only a landing and no product yet, you usually want them to leave their email. You can program it on your own (if you can code, it's a pretty easy task - for example, you can add a simple server code that just sends you a user's email) or use a third-party service. We tried several and our latest choice is [Sender](https://www.sender.net/). Their pricing is nice and their support is great and fast (if you need it).
 
 ### 25. Survey
-Another popular form of validation the idea or collecting opinions are surveys. The simple, effective and free tool is Google Forms.
+Another popular form of validation of the idea or collecting opinions is the survey. The simple, effective, and free tool is Google Forms.
 #### Some tips
-1. But don't overuse it! Do not ask too many questions and don't ask personal questions (like phone number and name) if you really don't need them.
+1. But don't overuse it! Do not ask too many questions and don't ask personal questions (like phone number and name) if you don't need them.
 2. If you collect email/name don't make these fields mandatory.
 
-## Other minor things that are worth to check
+## Other minor things that are worth check
 ### 26. Broken links
-Check all the links you have on your page (they can be found everywhere but I often see then in the footer). Sometimes founders would like to add stubs leading to the same page (like links "About" or "How it works") but I wouldn't do that - it makes the website less truthful.
+Check all the broken links on your page (they can be found everywhere but I often see them in the footer). Sometimes founders would like to add stubs leading to the same page (like links "About" or "How it works") but I wouldn't do that - it makes the website less truthful.
 
 ### 27. Credits
-If you use free graphics downloaded from the Internet, it's always a good idea to mention the autors. When downloading a picture from [Unsplash](https://unsplash.com/) they give you a snippet with shoutout HTML code that you can easily insert into your webpage.
+If you use free graphics downloaded from the Internet, it's always a good idea to mention the authors. When downloading a picture from [Unsplash](https://unsplash.com/) they give you a snippet with shoutout HTML code that you can easily insert into your webpage.
 
 ### 28. Domain name
-Many founders prefer to buy a unique domain name bit if you are still unsure if you will work on this idea, don't waste your time looking for a nice domain name (it's hard these days!) and use subdomain on the service you are hosting your website (in this case, your domain name will look similar to "http://mywebsite.somehosting.com").
-But if you decided to buy a domain name, there are still many domain can be found on .com zone but if you can't find any, try new domain zones like .so, .dev, .to and others.
+Many founders prefer to buy a unique domain name bit if you are still unsure if you will work on this idea, don't waste your time looking for a nice domain name (it's hard these days!) and use a subdomain on the service you are hosting your website (in this case, your domain name will look similar to "http://mywebsite.somehosting.com").
+But if you decided to buy a domain name, there are still many domains that can be found on .com zone but if you can't find any, try new domain zones like .so, .dev, .to, and others.
 
 ### 29. Engine or homemade website? Don't overcomplicate
-Many simple but very nice and effective landings can be created with free tools like Wordpress, Wix, or [Carrd](https://carrd.co/). If your landing page is supersimple and has only one or two pieces of text and form, a super-simple landing could be more than enough.
+Many simple but very nice and effective landings can be created with free tools like Wordpress, Wix, or [Carrd](https://carrd.co/). If your landing page is super simple and has only one or two pieces of text and form, a super-simple landing could be more than enough.
 
 ### 30. Provide a 404 page
 If you think people will not try to break your website you are pretty wrong. They will and be ready. Provide a nice, simple error page and test how your website shows it. It's pretty easy: just enter in the browser URL field the page that doesn't exist.
