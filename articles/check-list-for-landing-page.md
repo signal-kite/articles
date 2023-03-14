@@ -19,14 +19,14 @@ Do not use free graphics like Undraw or Absurd illustrations. Not only they are 
 
 Be careful with free photos you can find on Unsplash. This is a very good resource but many photos have already been used thousand times what again, makes your website look amateurish.
 
-You can hire a freelance photographer or illustrator, for example here: [https://www.freelancer.com/](https://www.freelancer.com/) We found this resource pretty affordable and the results satisfying.
+You can hire a freelance photographer or illustrator, for example here: [https://www.freelancer.com/](https://www.freelancer.com/). We found this resource pretty affordable and the results satisfying.
 
 Another source of great free illustrations (that are actually not free) is [Adobe Stock](https://stock.adobe.com/). The trick is to use their free trial that allows you to download 10 free resources. Be careful though, not all of them are great (for example, we found "seamless patterns" not seamless at all).
 
 A couple of other sources of free graphics:
 
 - [LapaNinja free illustrations](https://www.lapa.ninja/freebies/illustrations/)
-- [Storyset](https://storyset.com/)
+- [Storyset](https://storyset.com/).
 
 ### 2. Colors
 There pretty common principles from the leading designers that will help you with coloring even if you (like us) are not designer al all:
@@ -57,13 +57,13 @@ If you are not a designer or don't want to hire a designer (or you can't) there 
 #### 4. Logo
 If it's your first project it's totally fine to have a simple, homemade logo. Some ideas on how to create it:
 
-- hire a freelancer on https://www.freelancer.com/
+- hire a freelancer on [Freelancer](https://www.freelancer.com/)
 - use combination of letters
 - use icons
 - ask [Midjourney](https://www.midjourney.com/) to generate it.
 
 #### 5. Small elements
-Icons, dots, arrows can give your website interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojii. But it's a bit tricky: because they are just text symbols, they don't look appealing if using as a text. Instead, consider using the colorful version of them. Google fonts has an open-source colorful Emoji font: https://fonts.google.com/noto/specimen/Noto+Color+Emoji
+Icons, dots, arrows can give your website interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojii. But it's a bit tricky: because they are just text symbols, they don't look appealing if using as a text. Instead, consider using the colorful version of them. Google fonts has an open-source [colorful Emoji font](https://fonts.google.com/noto/specimen/Noto+Color+Emoji).
 
 We found these free icon sets the best choice:
 
@@ -174,9 +174,11 @@ Don't forget to check the texts on your website before lauch. Here is how you ca
 #### Meta tags
 When you launch your website, even if it's just one page and very simple, it's important to make it discoverable by search engines as soon as possible. Meta tags are special tags that usually are added to the &lt;head&gt; section of a web page. Provide the following tags and make sure they have the correct information:
 
-- &lt;meta name="description" content="Description of the page"&gt;
-- &lt;meta name="keywords" content="Keywords that will help to find your website"&gt;
-- &lt;meta name="author" content="The company or author name"&gt;
+```
+<meta name="description" content="Description of the page">
+<meta name="keywords" content="Keywords that will help to find your website">
+<meta name="author" content="The company or author name">
+```
 
 #### Tags for social networks
 When you publish the link on Twitter, Facebook, and other media, the link will be rendered. For example, this is how our link is rendered when mentioned in a tweet:
