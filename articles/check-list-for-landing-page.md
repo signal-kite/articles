@@ -174,11 +174,11 @@ Don't forget to check the texts on your website before lauch. Here is how you ca
 #### Meta tags
 When you launch your website, even if it's just one page and very simple, it's important to make it discoverable by search engines as soon as possible. Meta tags are special tags that usually are added to the &lt;head&gt; section of a web page. Provide the following tags and make sure they have the correct information:
 
-<code>
+```
 <meta name="description" content="Description of the page">
 <meta name="keywords" content="Keywords that will help to find your website">
 <meta name="author" content="The company or author name">
-</code>
+```
 
 #### Tags for social networks
 When you publish the link on Twitter, Facebook, and other media, the link will be rendered. For example, this is how our link is rendered when mentioned in a tweet:
