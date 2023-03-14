@@ -12,9 +12,7 @@ Before you launch your landing page, take time to check all these things. Some o
 
 We split all these things to check into groups by topic but keep in mind, some of them can be part of other group.
 
-## 1. Design
-
-### 1. Graphics
+## 1. Design: graphics
 Do not use free graphics like Undraw or Absurd illustrations. Not only they are very overused (what makes your website looking as thousands of others) but they are often misleading, distracting, and taste-less. 
 
 Be careful with free photos you can find on Unsplash. This is a very good resource but many photos have already been used thousand times what again, makes your website look amateurish.
@@ -28,13 +26,17 @@ A couple of other sources of free graphics:
 - [LapaNinja free illustrations](https://www.lapa.ninja/freebies/illustrations/)
 - [Storyset](https://storyset.com/).
 
-### 2. Colors
+### 2. Design:colors
 There pretty common principles from the leading designers that will help you with coloring even if you (like us) are not designer al all:
 
 - do not use very contrast colors together (like yellow and green, red and blue, and so on)
 - do not use low contrast colors together (like light grey on light black)
 
-#### 2.1. How to choose a palette
+The example of a design that will burn your eyes:
+![image](https://user-images.githubusercontent.com/125164513/224879490-bee62551-46fc-498e-bd60-5a901a3f0888.png)
+
+
+#### 3.Design: How to choose a palette
 When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (usually they are white or grey). But if you picked 2 main colors, use one as main (for background or big elements) and the second one - for small elements (underlining, small dots, or the first capital letters.
 
 To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: [https://en.wikipedia.org/wiki/Color_wheel](https://en.wikipedia.org/wiki/Color_wheel).
@@ -49,12 +51,12 @@ The idea is very simple: pick up 2 colors that are on the opposite sides of whee
 
 Of course, it's not necessarily to follow strict colors, but the tints could be selected in the same way.
 
-### 3. Main design
+### 4. Design: layout and overal design
 If you are not a designer or don't want to hire a designer (or you can't) there is only one way to make a nice design: find a website you like and _borrow_ their idea. "Borrow" doesn't mean blatant copying, not at all. It means you may reproduce their findings at your design, but nothing more. Do not copy colors, CSS, texts.
 
 2 great sources of inspirations: [Lapa Ninja](https://www.lapa.ninja) and [Landingfolio](https://www.landingfolio.com/).
 
-#### 4. Logo
+#### 5. Design: logo
 If it's your first project it's totally fine to have a simple, homemade logo. Some ideas on how to create it:
 
 - hire a freelancer on [Freelancer](https://www.freelancer.com/)
@@ -62,7 +64,7 @@ If it's your first project it's totally fine to have a simple, homemade logo. So
 - use icons
 - ask [Midjourney](https://www.midjourney.com/) to generate it.
 
-#### 5. Small elements
+#### 6. Design: small elements
 Icons, dots, arrows can give your website interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojii. But it's a bit tricky: because they are just text symbols, they don't look appealing if using as a text. Instead, consider using the colorful version of them. Google fonts has an open-source [colorful Emoji font](https://fonts.google.com/noto/specimen/Noto+Color+Emoji).
 
 We found these free icon sets the best choice:
@@ -72,10 +74,10 @@ We found these free icon sets the best choice:
 
 Also frameworks, like [Bootstrap](https://getbootstrap.com/) - 1800 icons have their own icon sets.
 
-#### 6. Background
+#### 7. Design: background
 Can be anything: an image, pattern, or just a color. Just remember that it should not distract the user's attention. 
 
-#### 7. Fonts
+#### 8. Design: fonts
 The main designers' rule is: no more than 2 different font families and no more than 4 different styles totally.
 You can find free and easy-to-use fonts at [Google Fonts](https://fonts.google.com/).
 
@@ -198,7 +200,7 @@ There is no secret: you just need to provide special metatags and the preview im
 
 A couple of important notes:
 
-1. The preview page URL should be full - so no relative paths like "/images/mypreview.png" would work.
+1. The preview page URL should be full - so no relative paths like "/images/mypreview.png" wouldn't work.
 2. To make sure the preview is rendered properly use some Twitter validation tool. Twitter itself has a preview tool but since 2022 the rendering the preview images functionality was removed (nobody knows why) so, instead use free third-party tools, for example, [Tweetpick validator](https://tweetpik.com/twitter-card-validator).
 
 ##### Facebook
@@ -217,7 +219,7 @@ This is how to do that:
 6. To make sure it's working, use [the Facebook debugger](https://developers.facebook.com/tools/debug).
 Enter your full URL in the field and click the Debug button.
 If you see some strange message like you need to provide "fb:app_id" click the Scrape Again button, you should see something like that:
-![image](https://user-images.githubusercontent.com/125164513/224822453-b1e9bad2-ebcc-45ae-ac74-ef348670c7ef.png
+![image](https://user-images.githubusercontent.com/125164513/224822453-b1e9bad2-ebcc-45ae-ac74-ef348670c7ef.png)
 
 
 
