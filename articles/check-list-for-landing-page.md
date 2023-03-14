@@ -1,4 +1,4 @@
-# 25 things to check when preparing a landing page for a launch
+# 30 things to check before launching a landing page
 
 _Cover photo by <a href="https://unsplash.com/es/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/photos/sxiSod0tyYQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>_
 
