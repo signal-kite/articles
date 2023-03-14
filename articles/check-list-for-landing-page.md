@@ -17,7 +17,7 @@ We split all these things to check into groups by topic but keep in mind, some o
 ### 1. Graphics
 Do not use free graphics like Undraw or Absurd illustrations. Not only they are very overused (what makes your website looking as thousands of others) but they are often misleading, distracting, and taste-less. 
 
-Don not use free photos you can find on Unsplash. This is a very good resource but many photos have already been used thousand times what again, makes your website look amateurish.
+Be careful with free photos you can find on Unsplash. This is a very good resource but many photos have already been used thousand times what again, makes your website look amateurish.
 
 You can hire a freelance photographer or illustrator, for example here: [https://www.freelancer.com/](https://www.freelancer.com/) We found this resource pretty affordable and the results satisfying.
 
