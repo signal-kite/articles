@@ -262,8 +262,8 @@ If you use free graphics downloaded from the Internet, it's always a good idea t
 Many founders prefer to buy a unique domain name bit if you are still unsure if you will work on this idea, don't waste your time looking for a nice domain name (it's hard these days!) and use subdomain on the service you are hosting your website (in this case, your domain name will look similar to "http://mywebsite.somehosting.com").
 But if you decided to buy a domain name, there are still many domain can be found on .com zone but if you can't find any, try new domain zones like .so, .dev, .to and others.
 
-### Don't overcomplicate
+### 29. Engine or homemade website? Don't overcomplicate
 Many simple but very nice and effective landings can be created with free tools like Wordpress, Wix, or [Carrd](https://carrd.co/). If your landing page is supersimple and has only one or two pieces of text and form, a super-simple landing could be more than enough.
 
-### 
-
+### 30. Provide a 404 page
+If you think people will not try to break your website you are pretty wrong. They will and be ready. Provide a nice, simple error page and test how your website shows it. It's pretty easy: just enter in the browser URL field the page that doesn't exist.
