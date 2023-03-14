@@ -19,11 +19,12 @@ Do not use free graphics like Undraw or Absurd illustrations. Not only they are 
 
 Don not use free photos you can find on Unsplash. This is a very good resource but many photos have already been used thousand times what again, makes your website look amateurish.
 
-You can hire a freelance photographer or illustrator, for example here: https://www.freelancer.com/ We found this resource pretty affordable and the results satisfying.
+You can hire a freelance photographer or illustrator, for example here: [https://www.freelancer.com/](https://www.freelancer.com/) We found this resource pretty affordable and the results satisfying.
 
-Another source of great free illustrations (that are actually not free) is [Adobe Stock](https://stock.adobe.com/). The trick is to use their free trial that allows you to download 10 free resources. Be careful though, not all of them are great (we found "seamless patterns" not seamless at all, for example).
+Another source of great free illustrations (that are actually not free) is [Adobe Stock](https://stock.adobe.com/). The trick is to use their free trial that allows you to download 10 free resources. Be careful though, not all of them are great (for example, we found "seamless patterns" not seamless at all).
 
 A couple of other sources of free graphics:
+
 - [LapaNinja free illustrations](https://www.lapa.ninja/freebies/illustrations/)
 - [Storyset](https://storyset.com/)
 
@@ -36,7 +37,7 @@ There pretty common principles from the leading designers that will help you wit
 #### 2.1. How to choose a palette
 When selecting a palette, pick up 1 (max 2) main colors, and 1 or 2 additional (usually they are white or grey). But if you picked 2 main colors, use one as main (for background or big elements) and the second one - for small elements (underlining, small dots, or the first capital letters.
 
-To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: https://en.wikipedia.org/wiki/Color_wheel
+To find the colors that will go toghether well, use the color wheel. It can be found, for example, here: [https://en.wikipedia.org/wiki/Color_wheel](https://en.wikipedia.org/wiki/Color_wheel).
 
 <img src="https://user-images.githubusercontent.com/125164513/221445007-414f91ac-548e-4bd7-b1b2-3d5dc10aff9d.png" width="300"/>
 
@@ -65,6 +66,7 @@ If it's your first project it's totally fine to have a simple, homemade logo. So
 Icons, dots, arrows can give your website interesting, fresh look. But do not overuse them. Instead of icons, you also can use emojii. But it's a bit tricky: because they are just text symbols, they don't look appealing if using as a text. Instead, consider using the colorful version of them. Google fonts has an open-source colorful Emoji font: https://fonts.google.com/noto/specimen/Noto+Color+Emoji
 
 We found these free icon sets the best choice:
+
 - [Tabler Icons](https://tabler-icons.io/) - 3400 icons
 - [FontAwesome](https://fontawesome.com/) - 2020 icons.
 
@@ -81,15 +83,17 @@ You can find free and easy-to-use fonts at [Google Fonts](https://fonts.google.c
 Frameworks are great but don't forget to change the design. We saw so many similar-looking websites that would look great if they would be different.
 Frameworks not only help make the website development easier and fater but also help with responsiveness.
 Some popular frameworks:
+
 - [Bootstrap](https://getbootstrap.com/)
 - [Bulma](https://bulma.io/)
 - [TailwindCSS](https://tailwindcss.com/)
 
-The big list of great frameworks can be found here: https://github.com/troxler/awesome-css-frameworks
+The big list of great frameworks can be found here: [https://github.com/troxler/awesome-css-frameworks](https://github.com/troxler/awesome-css-frameworks)
 
 #### 9. Responsiveness
 Nowadays, the mobile devices are used for browsing the Internet. So, the responsiveness is crucially important for websites.
 Usually, it can be done with [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) but web frameworks already solved this problem for you so you don't need to (see the list in the previous point). 
+
 The modern browsers allow checking your website on small screens, for example, how it can be done on Chrome:
 
 ![image](https://user-images.githubusercontent.com/125164513/221448904-c282dcd5-a6b0-4e17-8632-aa2f70dfc99e.png)
@@ -99,7 +103,7 @@ The modern browsers allow checking your website on small screens, for example, h
 #### 10. Favicon
 Many experts think you can launch without a favicon. Sure, you can but trust us, a website without a favicon looks so amateurish that it can affect the results of launch.
 ##### Q&A
-##### What is a favicon
+##### What is a favicon?
 It's a small picture shown on the browser's tab:
 ![image](https://user-images.githubusercontent.com/125164513/223312093-6d222b15-3f17-4449-bd48-85da8c40d3c6.png)
 
@@ -134,6 +138,7 @@ CTA or "call-to-action" is a button or link prompting a user do something right 
 #### 13. Features? No. Profits!
 We see so many landing pages that are focused on their features that we often loose the whole purpose of the service or tool. Instead, it's always better to explain how your product makes the users' lives easier. Which does it solve? how effectively? faster? 
 To make the message clear you need to understand which users you are targeted to and solve _their_ problems. Always ask "why" until you gain the core problem to be solved.
+
 ##### The example
 A web tool helps with memorizing words in a foreign language. One of the features they described was "easy-to-use innovative flash cards" what said nothing to us. Do we really need an "innovative" flash cards? How does it help? We started asking "why" and it turned out that "innovative" flash cards help to memorize words faster therefore founders need to mention it (and they can get rid off the "innovative" word :).
 
@@ -151,6 +156,7 @@ It's a good idea to find the popular objections and give the answers. You can pu
 
 #### Pictures/screenshots
 It's a good idea to show the real screenshots instead of abstract pictures showing people doing something on a giant screen... that could look nice but it will not give a potential user an idea about the real product. If you don't have a product yes, show sketches or drawn prototype. For prototyping you can use many free products, for example:
+
 - [JustInMind](https://www.justinmind.com/)
 - [MockFlow](https://www.mockflow.com/)
 - [Protopie](https://www.protopie.io/)
@@ -158,7 +164,8 @@ It's a good idea to show the real screenshots instead of abstract pictures showi
 
 #### Grammar
 Don't forget to check the texts on your website before lauch. Here is how you can do it:
-- hire a professional proofreader
+
+- hire a professional editor
 - use [Grammarly](https://www.grammarly.com/) - their free plan is very comprehensive
 - ask [ChatGPT](https://chat.openai.com/auth/login) proofread your text
 
@@ -178,7 +185,7 @@ When you publish the link on Twitter, Facebook, and other media, the link will b
 ##### Twitter
 There is no secret: you just need to provide special metatags and the preview image. Twitter calls such a preview "a card" and it's described in [their documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started). Basically, you need to add the following metatags to your website &lt;head&gt; section:
 
-```
+<code>
 <meta name="twitter:card"              content="summary_large_image">
 <meta name="twitter:site"              content="@YourTwitterHandle">
 
@@ -187,14 +194,17 @@ There is no secret: you just need to provide special metatags and the preview im
 <meta property="og:title"              content="PageTitle" />
 <meta property="og:description"        content="PageDescription" />
 <meta property="og:image"              content="PreviewPageURL" />
-```
+</code>
+
 A couple of important notes:
+
 1. The preview page URL should be full - so no relative paths like "/images/mypreview.png" would work.
 2. To make sure the preview is rendered properly use some Twitter validation tool. Twitter itself has a preview tool but since 2022 the rendering the preview images functionality was removed (nobody knows why) so, instead use free third-party tools, for example, [Tweetpick validator](https://tweetpik.com/twitter-card-validator).
 
 ##### Facebook
 To be able to render the link preview when posting on Facebook, you use the same OpenGraph (og) metatags and also you need to create a FB application.
 This is how to do that:
+
 1. Open the [Facebook page for developers](https://developers.facebook.com/apps/) and click the Create app button.
 2. Select Business app type and click the Next button: ![image](https://user-images.githubusercontent.com/125164513/224818759-f599e033-583a-4fa0-84c1-f0d02f1427d7.png)
 3. Enter your app name and email, leave the latest option unselected: ![image](https://user-images.githubusercontent.com/125164513/224819109-584514e2-c88f-40c1-a067-27adbd4b8e91.png)
