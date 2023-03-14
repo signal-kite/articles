@@ -12,9 +12,9 @@ Before you launch your landing page, take time to check all these things. Some o
 
 We split all these things to check into groups by topic but keep in mind, some of them can be part of other group.
 
-### Design
+## Design
 
-#### 1. Graphics
+### 1. Graphics
 Do not use free graphics like Undraw or Absurd illustrations. Not only they are very overused (what makes your website looking as thousands of others) but they are often misleading, distracting, and taste-less. 
 
 [Unsplash](https://unsplash.com/) is a great source of free photos. Bu be careful with using them because many photos have already been used thousand times what makes your website look amateurish.
@@ -28,14 +28,14 @@ A couple of other sources of free graphics:
 - [LapaNinja free illustrations](https://www.lapa.ninja/freebies/illustrations/)
 - [Storyset](https://storyset.com/).
 
-#### 2. Pictures/screenshots
+### 2. Pictures/screenshots
 It's a good idea to show the real screenshots instead of abstract pictures showing people doing something on a giant screen... that could look nice but it will not give a potential user an idea about the real product. If you don't have a product yes, show sketches or drawn prototype. For prototyping you can use many free products, for example:
 
 - [JustInMind](https://www.justinmind.com/)
 - [MockFlow](https://www.mockflow.com/)
 - [Protopie](https://www.protopie.io/)
 
-#### 3. Colors
+### 3. Colors
 There pretty common principles from the leading designers that will help you with coloring even if you (like us) are not designer al all:
 
 - do not use very contrast colors together (like yellow and green, red and blue, and so on)
