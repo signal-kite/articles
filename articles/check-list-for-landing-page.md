@@ -187,7 +187,7 @@ When you publish the link on Twitter, Facebook, and other media, the link will b
 ##### Twitter
 There is no secret: you just need to provide special metatags and the preview image. Twitter calls such a preview "a card" and it's described in [their documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started). Basically, you need to add the following metatags to your website &lt;head&gt; section:
 
-<code>
+```
 <meta name="twitter:card"              content="summary_large_image">
 <meta name="twitter:site"              content="@YourTwitterHandle">
 
@@ -196,7 +196,7 @@ There is no secret: you just need to provide special metatags and the preview im
 <meta property="og:title"              content="PageTitle" />
 <meta property="og:description"        content="PageDescription" />
 <meta property="og:image"              content="PreviewPageURL" />
-</code>
+```
 
 A couple of important notes:
 
