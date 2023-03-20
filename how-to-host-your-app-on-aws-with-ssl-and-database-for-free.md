@@ -15,3 +15,12 @@ Unfortunately, there are flaws too:
 So, this article is dedicated to hosting an applictations with AWS. When you start a new startup you don't want to pay a lot for the app that you are not sure to be with in a year. Then, why wouldn't use an AWS to host the app, connect to your domain name, provide SSL, alongside with a relational database?
 
 ### Why host an app on AWS?
+1. It has a great free tier valid for 12 montsh.
+2. It's not as hard as running your app, say, on DigitalOcean
+3. You can easily attach your own domain name and SSL.
+
+### Some flaws
+1. As a tradition, the UI/UX is not simple and intuitive but this article should guide you through all the obstacles and show all the tricks.
+2. It may be suitable only for apps that can be easily run on Linux (like Node.js or Python/Flask). We tried to run a .Net app but didn't find a way to install the additional libraries that we needed.
+
+Don't forget to check [the Amazon program for startups](https://aws.amazon.com/activate/founders/) for additional funding and discounts!
