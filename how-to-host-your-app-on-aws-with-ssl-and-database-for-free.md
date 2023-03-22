@@ -62,4 +62,24 @@ python3 -m venv venv
 ```
 .\venv\Scripts\python.exe
 ```
-5. 
+![image](https://user-images.githubusercontent.com/125164513/226763279-a6378b84-8821-4eec-a4b8-892a538bb36f.png)
+
+4. **Activate the virtual environment** In your VS Code terminal, run the command to activate the virtual environment.
+For Windows, run:
+
+```
+venv\Scripts\activate.bat
+```
+
+For Mac/Linix, run:
+
+```
+source venv/bin/activate
+```
+5. **Install the Python packages** To run the Flask app, we need to install Flask itself. To do it, run the following command:
+```
+pip install flask
+```
+> **Note**
+> Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to [the official documentation](https://pip.pypa.io/en/stable/installation/).
+
