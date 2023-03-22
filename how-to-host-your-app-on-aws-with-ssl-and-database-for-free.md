@@ -139,6 +139,25 @@ After it's done you can sign in into the AWS console and make sure your applicat
 > **Note**
 > If you use a source control like GitHub please make sure you commit the changes first because AWS EB CLI automatically grabs the latest from the repository. How to automate the process, see the section "Automation".
 
+### Set up SSL
+1.**Request the certificate** In AWS console, in the search field, start typing the _certificate_ word, then click the Certificate manager: 
+![image](https://user-images.githubusercontent.com/125164513/226989389-7e8fcba1-9cfc-436b-9c3c-042458c35450.png)
+Then click the _Request certificate_ button: 
+![image](https://user-images.githubusercontent.com/125164513/226991614-c34fe78b-3196-42fe-9b37-57500d1e70fd.png)
+Leave the _Request a public certificate_ checkbox checked and click the _Next_ button: 
+![image](https://user-images.githubusercontent.com/125164513/226991833-60010f86-d983-4c11-8baf-ec10312dfae7.png)
+On the next page, enter the domain name (that you already have bought) you want to be covered by this certificate. If you want several domains to be covered, enter them starting from the wildcard, for example "\*.mydomain.com".
+
+> **Note**
+> You enter only those domain names that will be connected to this application. Usually, it may be a website like www.mysite.com or an application app.mysite.com. If you have several apps, you should create separate accounts for them to avoid exceeding the free tier.
+
+So, your page could look something like that: 
+![image](https://user-images.githubusercontent.com/125164513/226993158-b29e09e8-a404-4a02-a52c-617e215ac8c3.png)
+Leave all the checkboxes untouched and click the _Request_ button.
+
+
+
+
 ## Automation
 
 ## Troubleshooting
