@@ -184,7 +184,9 @@ So, in this example, you create 2 records, one of them should look like this:
 After you added your record, go back to your AWS certificate and refresh the page. You will see it's in pending status: 
 ![image](https://user-images.githubusercontent.com/125164513/226999177-a6ad9d27-96ed-4f5f-8118-8406464c09c1.png)
 
-Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As soon as the validation process is done, the status will be changed to "Issued":
+Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As soon as the validation process is done, the status will be changed to "Issued" and the domain statues to the "Success": 
+![image](https://user-images.githubusercontent.com/125164513/227002269-bca8f068-a882-401c-9978-60e470cc9f16.png)
+
 ## Automation
 
 ## Troubleshooting
