@@ -155,7 +155,26 @@ So, your page could look something like that:
 ![image](https://user-images.githubusercontent.com/125164513/226993158-b29e09e8-a404-4a02-a52c-617e215ac8c3.png)
 Leave all the checkboxes untouched and click the _Request_ button.
 
+You then will be redirected to the page with certificates. If the page looks empty click the button with round arrow to update it, then click the link with _Certificate Id_ and you will be redirected again. Scroll a bit down to see the domain list.
 
+2. **Validate your domain ownership** In the previous step, we left the _DNS validation_ checked, so we need to prove we own our domain names. To do that, sign in the contol panel of provider you've bought the domain name from. In our example, we will use the Namecheap. After you signed in, open the list of your domains, find your domain and click the _Manage_ button: 
+![image](https://user-images.githubusercontent.com/125164513/226995705-a615d298-4004-4e9d-8e1f-59f225d2068c.png)
+
+Then click the _Advanced DNS_ tab, you will be redirected to the page with all DNS records for your domain. Click the _ADD NEW RECORD_ button: 
+![image](https://user-images.githubusercontent.com/125164513/226996194-70330c3f-8e15-458f-bf85-2c0f664cd0cd.png)
+
+then select _CNAME Record_: 
+![image](https://user-images.githubusercontent.com/125164513/226996441-dba5f5b2-ad55-4122-8e17-9278abd8d3d7.png)
+
+Now, come back to the certificate manager, and copy the following values to the corresponding fields in CNAME record:
+
+- CNAME name --> Host
+- CNAME value --> Target
+
+![image](https://user-images.githubusercontent.com/125164513/226997311-17f99233-728e-480d-b113-c5f60edeec2c.png)
+
+
+> **Note** Do not copy the full CNAME name, only the part **before** your domain name as shown on the picture about. For the domain with "www", "app" or any other prefix, copy the prefix but not the domain name.
 
 
 ## Automation
