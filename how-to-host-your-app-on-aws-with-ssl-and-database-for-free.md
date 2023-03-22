@@ -130,12 +130,13 @@ Again, it will ask you some question but most of them are pretty straightforward
 More information can be found in [their documentation on this command](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-create.html).
 
 After it's done you can sign in into the AWS console and make sure your application and environment are deployed successfully. It will provide the link you can check the working app: 
-![image](https://user-images.githubusercontent.com/125164513/226984477-4b379343-616e-48c6-ba03-89ddf9bc13ce.png)
+![image](https://user-images.githubusercontent.com/125164513/226986287-99599c84-af62-4d1e-b27b-3b91dd413df5.png)
 
-> **Note 1**
+
+> **Note**
 > If your app's front-end is built with Webpack compile your JavaScript code on your website and deploy the result bundle. We didn't find a way to make AWS EB compile the JavaScript code during deployment. Don't forget to remove the dist folders from your .gitingore file.
 
-> **Note 2**
+> **Note**
 > If you use a source control like GitHub please make sure you commit the changes first because AWS EB CLI automatically grabs the latest from the repository. How to automate the process, see the section "Automation".
 
 ## Automation
