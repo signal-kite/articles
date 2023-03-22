@@ -181,7 +181,10 @@ Now, come back to the certificate manager, and copy the following values to the 
 So, in this example, you create 2 records, one of them should look like this: 
 ![image](https://user-images.githubusercontent.com/125164513/226998642-35c7618f-9625-4355-81b0-baab139f1f64.png)
 
+After you added your record, go back to your AWS certificate and refresh the page. You will see it's in pending status: 
+![image](https://user-images.githubusercontent.com/125164513/226999177-a6ad9d27-96ed-4f5f-8118-8406464c09c1.png)
 
+Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As soon as the validation process is done, the status will be changed to "Issued":
 ## Automation
 
 ## Troubleshooting
