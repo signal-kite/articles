@@ -107,7 +107,8 @@ eb init
 The command starts the configuring process and will ask you for credentials. It also will ask other questions like region (you need to remember the region because the application will be deployed exactly in the given region and will be visible in others).
 Answer "classic" to the question about the load balancer.
 If you don't want to create SSH now, you can omit this step. (More details can be found [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)).
-5. **AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the "" or "" file (depending on your operating system) and add the following text in the end:
+5. **AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
+ or _~/.aws/config_ file (depending on your operating system) and add the following text in the end:
 ```
 [profile profile-name]
 aws_access_key_id = XXXXXXXXXX
