@@ -105,13 +105,39 @@ In the next window copy both access id and secret key. You also can download the
 eb init
 ```
 The command starts the configuring process and will ask you for credentials. It also will ask other questions like region (you need to remember the region because the application will be deployed exactly in the given region and will be visible in others).
-Answer "classic" to the question about the load balancer.
 If you don't want to create SSH now, you can omit this step. (More details can be found [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)).
 5. **AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
- or _~/.aws/config_ file (depending on your operating system) and add the following text in the end:
+ or _~/.aws/config_ file (depending on your operating system) and add the following text:
 ```
-[profile profile-name]
+[profile profile-app-1]
+aws_access_key_id = XXXXXXXXXX
+aws_secret_access_key = XXXXXXXXXXXX
+
+[profile profile-app-2]
 aws_access_key_id = XXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXX
 ```
 The profile name is arbitrary (but should not contain spaces).
+Then, when you configure EB, just use one of the profile names:
+```
+eb init --profile profile-app-2
+```
+6. **Create an environment** In terms of AWS, here is hierarchy Application -> environment. So, the second step is to create an evnironment. Run the command:
+```
+eb create
+```
+Again, it will ask you some question but most of them are pretty straightforward. Answer "_classic_" to the question about the load balancer.
+More information can be found in [their documentation on this command](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-create.html).
+
+After it's done you can sign in into the AWS console and make sure your application and environment are deployed successfully. It will provide the link you can check the working app: 
+![image](https://user-images.githubusercontent.com/125164513/226984477-4b379343-616e-48c6-ba03-89ddf9bc13ce.png)
+
+> **Note 1**
+> If your app's front-end is built with Webpack compile your JavaScript code on your website and deploy the result bundle. We didn't find a way to make AWS EB compile the JavaScript code during deployment. Don't forget to remove the dist folders from your .gitingore file.
+
+> **Note 2**
+> If you use a source control like GitHub please make sure you commit the changes first because AWS EB CLI automatically grabs the latest from the repository. How to automate the process, see the section "Automation".
+
+## Automation
+
+## Troubleshooting
