@@ -174,7 +174,12 @@ Now, come back to the certificate manager, and copy the following values to the 
 ![image](https://user-images.githubusercontent.com/125164513/226997311-17f99233-728e-480d-b113-c5f60edeec2c.png)
 
 
-> **Note** Do not copy the full CNAME name, only the part **before** your domain name as shown on the picture about. For the domain with "www", "app" or any other prefix, copy the prefix but not the domain name.
+> **Note** Do not copy the full **CNAME name**, only the part **before** your domain name as shown on the picture about. For the domain with "www", "app" or any other prefix, copy the prefix but not the domain name.
+
+> **Note** We found the Namecheap DNS record editor a bit weird: when we copy the values right from the AWS Console, the UI gets frozen. So, instead, we copy the values to some plain text editor, then copy the text into Namecheap record.
+
+So, in this example, you create 2 records, one of them should look like this: 
+![image](https://user-images.githubusercontent.com/125164513/226998642-35c7618f-9625-4355-81b0-baab139f1f64.png)
 
 
 ## Automation
