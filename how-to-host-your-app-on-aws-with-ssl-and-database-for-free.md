@@ -42,7 +42,8 @@ Before we start, let's define the list of task we would like to accomplish:
 You need the following tools and programs to be installed:
 1. IDE. We use [MS VS Code](https://code.visualstudio.com/)
 2. Python. At the moment, it's version the 3.8 but you can [download a fresher version](https://www.python.org/downloads/)
-3. [AWS EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html).
+3. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+4. [AWS EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html).
 
 
 ### Create and deploy an app on AWS Elastic Beanstalk (EB)
@@ -83,3 +84,22 @@ pip install flask
 > **Note**
 > Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to [the official documentation](https://pip.pypa.io/en/stable/installation/).
 
+6. **Run your app** To make sure the app works normally, run it:
+```
+flask run
+```
+> **Note**
+> In a case of some issues, please refer to the [Flask Quick Start](https://flask.palletsprojects.com/en/1.1.x/quickstart/).
+
+#### Set up the Amazon account
+1. **Create an account** Firstly, go to the AWS console and create [a new account](https://portal.aws.amazon.com/billing/signup#/start/email). You will need to verify your email, enter a credit card (even if you will only free tier), and verify your phone number.
+2. **Sign in the AWS console** Now you can sign in. Please note, that verification of your new account may take some time, up to several hours. It looks like you can sign in but can't do anything in the console.
+3. **Copy your credentials** Inside the AWS console, click your username (in the top right corner) and select _Seciruty credentials_. 
+![image](https://user-images.githubusercontent.com/125164513/226777317-6f56f140-b690-4f29-b39b-ff3f14e437ca.png)
+Scroll a bit and click the _Create access key_ button:
+![image](https://user-images.githubusercontent.com/125164513/226777655-6c7ffa25-8cb9-4d5e-948d-42caf6e33278.png)
+You will see the warning titled "Root user access keys are not recommended", click the checkbox and then the _Create access key_ button.
+In the next window copy both access id and secret key. You also can download the keys in a file.
+4. **AWS EB Configuring** In your
+
+ 
