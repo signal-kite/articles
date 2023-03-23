@@ -187,6 +187,7 @@ After you added your record, go back to your AWS certificate and refresh the pag
 Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As soon as the validation process is done, the status will be changed to "Issued" and the domain statues to the "Success": 
 ![image](https://user-images.githubusercontent.com/125164513/227002269-bca8f068-a882-401c-9978-60e470cc9f16.png)
 
+3. **Add a load balancer** Come back to your EB console.
 ## Automation
 
 ## Troubleshooting
