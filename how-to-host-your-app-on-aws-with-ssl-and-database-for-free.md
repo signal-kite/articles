@@ -187,7 +187,29 @@ After you added your record, go back to your AWS certificate and refresh the pag
 Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As soon as the validation process is done, the status will be changed to "Issued" and the domain statues to the "Success": 
 ![image](https://user-images.githubusercontent.com/125164513/227002269-bca8f068-a882-401c-9978-60e470cc9f16.png)
 
-3. **Add a load balancer** Come back to your EB console.
+3. **Add a load balancer** Come back to your EB console. Click your environment, then _Configuration_ link: 
+![image](https://user-images.githubusercontent.com/125164513/227392070-e99c822c-d4f8-4d89-a4a6-0f37fa3461f6.png)
+Scroll to the _Load balancer_ and clilck the _Edit_ button on the right. Click the _Add listener_ button. Then add the values as shown on the picture below: 
+![image](https://user-images.githubusercontent.com/125164513/227392479-a88b6bd7-f34c-44b0-ba09-0bfd045f9a8f.png)
+In the _SSL certificate_ dropdown, select the certificate you created on the previous step.
+Click the _Add_ button, you will be redirected back. Scroll the page to the end and click the _Apply_ button.
+
+4. **Update the DNS record** Copy your environment AWS URL. For example, you can copy the link from the left menu from the _Go to enironment_ item: 
+![image](https://user-images.githubusercontent.com/125164513/227393220-eb9f52f4-afc9-4867-959c-d0141bbcb6ba.png)
+
+Now, open your hosting providing control panel. We will show you how to update the DNS if your hosting provider is Namecheap. For other hostings, please refer their documentation. Open the list of your domains and click the _Manage_ button agains your domain. Then click the _Advanced DNS_ tab. In this tab, find the CNAME record, pointing to your parking page. If you don't have such record, create a new one by clicking the _ADD NEW RECORD_ button: 
+![image](https://user-images.githubusercontent.com/125164513/227393684-2b9aab1e-e92d-4844-9620-eeea4d460df0.png)
+
+You may leave the _Host_ field as is (if you want the URL to start with "www", or change it to "@" (without quotes) if you want to have just a bare domain name - in this case your URL will be like https://mywebsite.com). In the _Value_ paste the environment link you copied before.
+
+That's it!
+
+> **Note**
+> Please be aware, the changes may take some time, usually 20-30 minutes, sometimes more. To verify your domain with SSL works, just enter in your web browser the domain name with "https" like: "https://mywebsite.com". If after 1-2 hours it's still not workin, please check if you've done everything as described, if so, please ask your hosting provider for assistance.
+
+> **Warning**
+> Please be aware that SSL and the load balancer can be used for free during 1 year **only for for one application/environment**. If you add one more, even without a load balancer, you can be immediately charged.
+
 ## Automation
 
 ## Troubleshooting
