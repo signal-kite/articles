@@ -213,16 +213,37 @@ That's it!
 ## Set up your AWS RDS PostgreSQL database
 ### Create a special database security group
 If your database will be accessed remotely, you will need to create and configure a security group.
-1. **Create a new security group** In your AWS console, start typing "ec2" in the search field, then select the _EC2_ service: 
+1. **Know your environment security group** Open your AWS EB console, click the environment, and then click the _Configuration_ in the left menu. In the _Instances_ pane, click the _Edit_ button, and then scroll to the end to see the list of security groups. You will see something like that: 
+![image](https://user-images.githubusercontent.com/125164513/227404563-1f2fd039-ae35-418f-8ea5-c0fb3d8d1f25.png)
+
+Write down the selected group Id.
+
+2. **Create a new security group** In your AWS console, start typing "ec2" in the search field, then select the _EC2_ service: 
 ![image](https://user-images.githubusercontent.com/125164513/227400233-0474f753-5c36-4659-833a-5fa3c75366ae.png)
 
+Scroll a bit to see on the left the menu and click it: 
+![image](https://user-images.githubusercontent.com/125164513/227402761-6289b0d2-b140-4db3-9efc-9926c8905bb3.png)
 
-1. **Create the database instance** Go to your AWS console and start typing: 
+Click the _Create security group_ button on the top right. Enter your group name, for example "Database security group", then description (optional). Click the _Add rule_ button in the _Inbound rules_ pane.
+For the new rule:
+- In the _Type_ field select "PostgreSQL"
+- Leave the _Protocol_, _Port range_, and _Source_ as is
+- In the field next to the _Source_ start typing "sg" and select the group accompanied with the environment (that you wrote down on the step 1). This will allow your application to access the database and prevents the connections from any other places.
+
+If you want to access the database from your own computer, add the second rule but in the _Source_ field select "My IP" value. Your list will look something like that: ![image](https://user-images.githubusercontent.com/125164513/227404887-01907624-c088-4609-87e1-f4d4737d4992.png)
+
+Click the _Create security group_ button.
+
+2. **Create the database instance** Go to your AWS console and start typing: 
 ![image](https://user-images.githubusercontent.com/125164513/227399066-f5f04a34-98ed-42ad-a282-adb36a4f0dce.png)
 Then click the RDS sevice, on the following page, click the _Create database_. 
-Leave the _Choose a database creation method_ pan with the _Standard create_ checked, then select your database and version (or leave it as is).
-In the _Templates_ pan select the _Free tier_ radiobutton and scroll a bit to the _Settings_.
+Leave the _Choose a database creation method_ pane with the _Standard create_ checked, then select your database and version (or leave it as is).
+In the _Templates_ pane select the _Free tier_ radiobutton and scroll a bit to the _Settings_.
 Enter your database name and master user name, then enter and re-enter your password.
+
+
+
+
 
 
 ## Automation
