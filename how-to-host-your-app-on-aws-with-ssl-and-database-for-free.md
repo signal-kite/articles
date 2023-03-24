@@ -241,10 +241,24 @@ Leave the _Choose a database creation method_ pane with the _Standard create_ ch
 In the _Templates_ pane select the _Free tier_ radiobutton and scroll a bit to the _Settings_.
 Enter your database name and master user name, then enter and re-enter your password.
 
+> **Note**
+> This database name is used for identifying the databases in the list of your databases, not for connection to it.
 
+In the _Instance configuration_ section you can leave "db.t3.micro".
+In the _Storage_ section leave the storage type as is "General Purpose SSD (gp2)" but change the allocated storage to 20Gib.
 
+> **Warning**
+> This step is very important! We don't know why they set up 200 Gb as default value for a free tier because the maximum storage that they don't charge for is 20Gb, and if you leave it as is (200 Gb) you will be immediatelly charged even if your data is just as little as 2Kb.
 
+You can leave the _Storage autoscaling_ section as is.
+In the _Connectivity_ section, leave the preselected choises as is.
+In the _Public access_ select **Yes** and then in the _Existing VPC security groups_ select that security group you created on the previous step.
+In the _Additional configuration_ enter the **Initial database name** - it's the name of database you will use in your connection string.
 
+> **Warning**
+> If you omit entering the database name, it will be set up as "postgres". 
+
+Change or leave other options, the click the _Create database_ button.
 
 ## Automation
 
