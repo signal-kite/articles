@@ -132,12 +132,22 @@ More information can be found in [their documentation on this command](https://d
 After it's done you can sign in into the AWS console and make sure your application and environment are deployed successfully. It will provide the link you can check the working app: 
 ![image](https://user-images.githubusercontent.com/125164513/226986287-99599c84-af62-4d1e-b27b-3b91dd413df5.png)
 
+7. **Deploy** Next time, when you are ready to deploy your changes, just run this command:
+```
+eb deploy
+```
 
 > **Note**
 > If your app's front-end is built with Webpack compile your JavaScript code on your website and deploy the result bundle. We didn't find a way to make AWS EB compile the JavaScript code during deployment. Don't forget to remove the dist folders from your .gitingore file.
 
 > **Note**
 > If you use a source control like GitHub please make sure you commit the changes first because AWS EB CLI automatically grabs the latest from the repository. How to automate the process, see the section "Automation".
+
+> **Warning**
+> Don't forget to set up your evnironment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane: 
+![image](https://user-images.githubusercontent.com/125164513/227616385-ebc3e434-c9c7-4cc7-a2e6-5b35c3f28b73.png)
+
+To automate this process, we create the Python script (see the last section about the automation).
 
 ### Set up SSL
 1.**Request the certificate** In AWS console, in the search field, start typing the _certificate_ word, then click the Certificate manager: 
@@ -293,6 +303,71 @@ More details on this issue in [the Stackoverflow post](https://stackoverflow.com
 4. push to git
 5. redeploy
 
+### Any error related to psycopg2
+**Solution** Try to change the protocol of your database connection string from "postgresql" to "postgresql+psycopg2" so the connection string will look like
+```
+postgresql+psycopg2://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName
+```
+
 ## Automation
+Here are several scripts that you can use to automate tedious tasks.
 
+### Fast initial set up of the application
+For Windows:
+```
+call python -m venv venv
+call venv\Scripts\activate.bat
+call python -m pip install --upgrade pip
+call pip install -r requirements.txt
+call npm install
+call npm run dev
+call flask run
+```
+For Unix-based Oss:
+```
+source venv/bin/activate
+python3 -m pip install --upgrade pip
+pip install -r requirements.txt
+npm install
+flask dbcreate
+npm run dev
+flask run
+```
 
+### Deployment bat
+Create a .bat file in the root folder and put the following content inside:
+```
+call npm run --prefix webapp prod
+call git add .
+call git commit -m %1
+call git push origin master
+call eb deploy
+```
+To run the bat, in your terminal, run the command:
+```
+bat-file-name "Git message"
+```
+> **Note** Write the bat file name without the extension.
+
+> **Warning**
+> This command is for Windows. For Unix-based OS, please, amend it correspondingly.
+
+### Python script to load the environment variables
+You may add and change your env variables manually but for faster process, we use the following script:
+
+```
+def send_env_vars_to_aws():
+    import dotenv, os
+    from configobj import ConfigObj
+    dotenv_file = dotenv.find_dotenv()
+    command = ''
+    if dotenv_file is not None:
+        config = ConfigObj(dotenv_file)     
+        vars = map(lambda key:f'{key}="{config[key]}"', config.scalars)
+        command = ' '.join(vars)
+        os.system(f'eb setenv {command}')
+```
+> **Note**
+> The _dotenv_ and _configobj_ packages should be installed.
+
+Run this script from your terminal.
