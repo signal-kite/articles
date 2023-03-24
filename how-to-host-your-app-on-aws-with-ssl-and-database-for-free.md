@@ -242,7 +242,7 @@ In the _Templates_ pane select the _Free tier_ radiobutton and scroll a bit to t
 Enter your database name and master user name, then enter and re-enter your password.
 
 > **Note**
-> This database name is used for identifying the databases in the list of your databases, not for connection to it.
+> This database name is used for identifying the databases in the list of your databases, this name is also used in the host name as we can see later.
 
 In the _Instance configuration_ section you can leave "db.t3.micro".
 In the _Storage_ section leave the storage type as is "General Purpose SSD (gp2)" but change the allocated storage to 20Gib.
@@ -268,9 +268,31 @@ It usually takes several minutes to create and run the instance so wait until it
 ```
 postgres://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName
 ```
-Use the same parameter to connect to the database from a client.
+Use the same parameter to connect to the database from a client. You already know the username, password, and database name. The know the host name, click the database and copy the endpoint on the _Endpoint & port_ pane: 
+![image](https://user-images.githubusercontent.com/125164513/227609754-f50f56f7-acfb-40b6-b202-2b34fbf83e07.png)
 
+
+## Troubleshooting
+In this section, we list the issues we faced but potentially anything can happen. Ask the Stackoverflow or ChatGPT for assistance :)
+
+### In your AWS log there is an error "Invalid requirements.txt on deploying django app to aws beanstalk"
+**Solution** To your project's root folder, add the _.ebextensions_ folder and create the file named, say _01_packages.config_ with the following content:
+```
+packages:
+  yum:
+    git: []
+    postgresql93-devel: []
+```
+More details on this issue in [the Stackoverflow post](https://stackoverflow.com/questions/18554666/invalid-requirements-txt-on-deploying-django-app-to-aws-beanstalk).
+
+### Error "Error: pg_config executable not found"
+**Solution**
+1. uninstall psycopg2, 
+2. install psycopg2-binary
+3. update requirements
+4. push to git
+5. redeploy
 
 ## Automation
 
-## Troubleshooting
+
