@@ -210,6 +210,21 @@ That's it!
 > **Warning**
 > Please be aware that SSL and the load balancer can be used for free during 1 year **only for for one application/environment**. If you add one more, even without a load balancer, you can be immediately charged.
 
+## Set up your AWS RDS PostgreSQL database
+### Create a special database security group
+If your database will be accessed remotely, you will need to create and configure a security group.
+1. **Create a new security group** In your AWS console, start typing "ec2" in the search field, then select the _EC2_ service: 
+![image](https://user-images.githubusercontent.com/125164513/227400233-0474f753-5c36-4659-833a-5fa3c75366ae.png)
+
+
+1. **Create the database instance** Go to your AWS console and start typing: 
+![image](https://user-images.githubusercontent.com/125164513/227399066-f5f04a34-98ed-42ad-a282-adb36a4f0dce.png)
+Then click the RDS sevice, on the following page, click the _Create database_. 
+Leave the _Choose a database creation method_ pan with the _Standard create_ checked, then select your database and version (or leave it as is).
+In the _Templates_ pan select the _Free tier_ radiobutton and scroll a bit to the _Settings_.
+Enter your database name and master user name, then enter and re-enter your password.
+
+
 ## Automation
 
 ## Troubleshooting
