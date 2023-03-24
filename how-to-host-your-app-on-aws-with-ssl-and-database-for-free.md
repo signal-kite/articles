@@ -259,6 +259,17 @@ In the _Additional configuration_ enter the **Initial database name** - it's the
 > If you omit entering the database name, it will be set up as "postgres". 
 
 Change or leave other options, the click the _Create database_ button.
+To make sure you database was created successfully, open _RTS -> Databases_ and find your database in the list: 
+![image](https://user-images.githubusercontent.com/125164513/227603893-e76dd4f9-11e1-4195-9b6c-cb48d557c6ed.png)
+
+It usually takes several minutes to create and run the instance so wait until its status is "Available".
+
+3. **Connect to your database** To connect to your database from your application, or any client (we use great free [pgAdmin](https://www.pgadmin.org/)) you need to form the connection string or get its parts. For PostgreSQL, the connection string has a format
+```
+postgres://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName
+```
+Use the same parameter to connect to the database from a client.
+
 
 ## Automation
 
