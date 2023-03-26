@@ -208,12 +208,15 @@ Leave all the checkboxes untouched and click the _Request_ button.
 You then will be redirected to the page with certificates. If the page looks empty click the button with the round arrow to update it, then click the link with _Certificate Id_ and you will be redirected again. Scroll a bit down to see the domain list.
 
 2. **Validate your domain ownership** In the previous step, we left the _DNS validation_ checked, so we need to prove we own our domain names. To do that, sign in to the control panel of your hosting provider. In our example, we will use the Namecheap. After you signed in, open the list of your domains, find your domain, and click the _Manage_ button: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226995705-a615d298-4004-4e9d-8e1f-59f225d2068c.png)
 
 Then click the _Advanced DNS_ tab, and you will be redirected to the page with all DNS records for your domain. Click the _ADD NEW RECORD_ button: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226996194-70330c3f-8e15-458f-bf85-2c0f664cd0cd.png)
 
-then select _CNAME Record_: 
+and then select _CNAME Record_: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226996441-dba5f5b2-ad55-4122-8e17-9278abd8d3d7.png)
 
 Now, come back to the certificate manager, and copy the following values to the corresponding fields in the CNAME record:
@@ -223,31 +226,39 @@ Now, come back to the certificate manager, and copy the following values to the 
 
 ![image](https://user-images.githubusercontent.com/125164513/226997311-17f99233-728e-480d-b113-c5f60edeec2c.png)
 
-
 > **Note** Do not copy the full **CNAME name**, only the part **before** your domain name as shown in the picture above. For the domain with "www", "app" or any other prefix, copy the prefix but not the domain name.
 
 > **Note** We found the Namecheap DNS record editor a bit weird: when we copy the values right from the AWS Console, the UI gets frozen. So, instead, we copy the values to some plain text editor, then copy the text into the Namecheap record.
 
 So, in this example, you create 2 records, one of them should look like this: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226998642-35c7618f-9625-4355-81b0-baab139f1f64.png)
 
 After you added your record, go back to your AWS certificate and refresh the page. You will see it's in pending status: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226999177-a6ad9d27-96ed-4f5f-8118-8406464c09c1.png)
 
 Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As soon as the validation process is done, the status will be changed to "Issued" and the domains statuses to "Success": 
+
 ![image](https://user-images.githubusercontent.com/125164513/227002269-bca8f068-a882-401c-9978-60e470cc9f16.png)
 
 3. **Add a load balancer** Come back to your EB console. Click your environment, then _Configuration_ link: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227392070-e99c822c-d4f8-4d89-a4a6-0f37fa3461f6.png)
+
 Scroll to the _Load balancer_ and click the _Edit_ button on the right. Click the _Add listener_ button. Then add the values as shown in the picture below: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227392479-a88b6bd7-f34c-44b0-ba09-0bfd045f9a8f.png)
+
 In the _SSL certificate_ dropdown, select the certificate you created in the previous step.
 Click the _Add_ button, you will be redirected back. Scroll the page to the end and click the _Apply_ button.
 
 4. **Update the DNS record** Copy your environment AWS URL. For example, you can copy the link from the left menu from the _Go to environment_ item: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227393220-eb9f52f4-afc9-4867-959c-d0141bbcb6ba.png)
 
 Now, open your hosting provider control panel. We will show you how to update the DNS if your hosting provider is Namecheap. For other hostings, please refer to their documentation. Open the list of your domains and click the _Manage_ button against your domain. Then click the _Advanced DNS_ tab. In this tab, find the CNAME record, pointing to your parking page. If you don't have a such record, create a new one by clicking the _ADD NEW RECORD_ button: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227393684-2b9aab1e-e92d-4844-9620-eeea4d460df0.png)
 
 You may leave the _Host_ field as is (if you want the URL to start with "www", or change it to "@" (without quotes) if you want to have just a bare domain name - in this case your URL will be like https://mywebsite.com). In the _Value_ field, paste the environment link you copied before.
@@ -255,32 +266,40 @@ You may leave the _Host_ field as is (if you want the URL to start with "www", o
 That's it!
 
 > **Note**
-> Please be aware, the changes may take some time, usually 20-30 minutes, sometimes more. To verify your domain with SSL works, just enter in your web browser the domain name with "https" like: "https://mywebsite.com". If after 1-2 hours it's still not working, please check if you've done everything as described, if so, please ask your hosting provider for assistance.
+> The changes may take some time, usually 20-30 minutes, sometimes more. To verify your domain with SSL works, just enter in your web browser the domain name with "https" like: "https://mywebsite.com". If after 1-2 hours it's still not working, please check if you've done everything as described, if so, please ask your hosting provider for assistance.
 
 > **Warning**
 > Please be aware that SSL and the load balancer can be used for free for 1 year **only for for one application/environment**. If you add one more, even without a load balancer, you can be immediately charged.
 
 ## Set up your AWS RDS PostgreSQL database
 ### Create a special database security group
+
 If your database will be accessed remotely, you will need to create and configure a security group.
+
 1. **Know your environment security group** Open your AWS EB console, click the environment, and then click the _Configuration_ in the left menu. In the _Instances_ pane, click the _Edit_ button, and then scroll to the end to see the list of security groups. You will see something like that: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227404563-1f2fd039-ae35-418f-8ea5-c0fb3d8d1f25.png)
 
 Write down the selected group Id.
 
 2. **Create a new security group** In your AWS console, start typing "ec2" in the search field, then select the _EC2_ service: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227400233-0474f753-5c36-4659-833a-5fa3c75366ae.png)
 
 Scroll a bit to see the menu on the left and click it: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227402761-6289b0d2-b140-4db3-9efc-9926c8905bb3.png)
 
 Click the _Create security group_ button on the top right. Enter your group name, for example, "Database security group", then the description (optional). Click the _Add rule_ button in the _Inbound rules_ pane.
+
 For the new rule:
 - In the _Type_ field select "PostgreSQL"
 - Leave the _Protocol_, _Port range_, and _Source_ as is
 - In the field next to the _Source_ start typing "sg" and select the group accompanied by the environment (that you wrote down in step 1). This will allow your application to access the database and prevents connections from any other places.
 
-If you want to access the database from your computer, add the second rule but in the _Source_ field select the "My IP" value. Your list will look something like that: ![image](https://user-images.githubusercontent.com/125164513/227404887-01907624-c088-4609-87e1-f4d4737d4992.png)
+If you want to access the database from your computer, add the second rule but in the _Source_ field select the "My IP" value. Your list will look something like that: 
+
+![image](https://user-images.githubusercontent.com/125164513/227404887-01907624-c088-4609-87e1-f4d4737d4992.png)
 
 Click the _Create security group_ button.
 
