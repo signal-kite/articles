@@ -118,6 +118,7 @@ Scroll a bit and click the _Create access key_ button:
 
 You will see the warning titled "Root user access keys are not recommended", click the checkbox and then the _Create access key_ button.
 In the next window copy both the access id and secret key. You also can download the keys in a file.
+
 4. **AWS EB Configuring** In your IDE terminal run the command (if you have or will have multiple applications, please jump to p.5):
 
 ```
@@ -126,6 +127,7 @@ eb init
 
 The command starts the configuring process and will ask you for credentials. It also will ask other questions like region (you need to remember the region because the application will be deployed exactly in the given region and will be visible in others).
 If you don't want to create SSH now, you can omit this step. (More details can be found [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)).
+
 5. **AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
  or _~/.aws/config_ file (depending on your operating system) and add the following text:
 
