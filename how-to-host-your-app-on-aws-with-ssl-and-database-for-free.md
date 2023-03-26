@@ -34,11 +34,12 @@ So, this article is dedicated to hosting applications with AWS. When you start a
 > As a sample application, we will create an app written in Python (Flask).
 
 Before we start, let's define the list of tasks we would like to accomplish:
-- [x] Create an application (in terms of AWS) and deploy it
-- [x] Attach our own domain name and provide SSL
-- [x] Create the database and connect to it (we will work with PostgreSQL)
+- [ ] Create an application (in terms of AWS) and deploy it
+- [ ] Attach our own domain name and provide SSL
+- [ ] Create the database and connect to it (we will work with PostgreSQL)
 
 #### Prerequisites
+
 You need the following tools and programs to be installed:
 1. IDE. We use [MS VS Code](https://code.visualstudio.com/)
 2. Python. At the moment, it's the version 3.8 but you can [download a fresher version](https://www.python.org/downloads/)
@@ -48,24 +49,31 @@ You need the following tools and programs to be installed:
 
 ### Create and deploy an app on AWS Elastic Beanstalk (EB)
 #### Install and run your app locally
+
 1. **Create a folder and add the code there.** The very minimal application in Flask may have as few as just [5 lines of code](https://flask.palletsprojects.com/en/2.2.x/quickstart/#a-minimal-application). You can copy this code into the _application.py_ file and put it into a root folder.
 2. **Create a virtual environment** If you don't know what is a Python virtual environment you can read [this nice guide](https://thebiogirls.com/index.php/2020/01/18/how-to-set-up-a-python-virtual-environment/).
 Basically in your root folder you run the following command:
+
 ```
 python -m venv venv
 ```
+
 This is a command for Windows, for other OS it may look like this:
 
 ```
 python3 -m venv venv
 ```
+
 3. **Select an interpreter** In your VS Code, click *View -> Command Palette -> Python: Select Interpreter* and then enter into the prompt field:
+
 ```
 .\venv\Scripts\python.exe
 ```
+
 ![image](https://user-images.githubusercontent.com/125164513/226763279-a6378b84-8821-4eec-a4b8-892a538bb36f.png)
 
 4. **Activate the virtual environment** In your VS Code terminal, run the command to activate the virtual environment.
+5. 
 For Windows, run:
 
 ```
@@ -77,37 +85,50 @@ For Mac/Linux, run:
 ```
 source venv/bin/activate
 ```
+
 5. **Install the Python packages** To run the Flask app, we need to install Flask itself. To do it, run the following command:
+
 ```
 pip install flask
 ```
+
 > **Note**
 > Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to [the official documentation](https://pip.pypa.io/en/stable/installation/).
 
 6. **Run your app** To make sure the app works normally, run it:
+
 ```
 flask run
 ```
+
 > **Note**
 > In the case of some issues, please refer to the [Flask Quick Start](https://flask.palletsprojects.com/en/1.1.x/quickstart/).
 
 #### Set up the Amazon account
+
 1. **Create an account** First, go to the AWS console and create [a new account](https://portal.aws.amazon.com/billing/signup#/start/email). You will need to verify your email, enter a credit card (even if you will only free tier), and verify your phone number.
 2. **Sign in to the AWS console** Now you can sign in. Please note, that verification of your new account may take some time, up to several hours. It looks like you can sign in but can't do anything in the console.
 3. **Copy your credentials** Inside the AWS console, click your username (in the top right corner), and select _Security credentials_. 
+
 ![image](https://user-images.githubusercontent.com/125164513/226777317-6f56f140-b690-4f29-b39b-ff3f14e437ca.png)
+
 Scroll a bit and click the _Create access key_ button:
+
 ![image](https://user-images.githubusercontent.com/125164513/226777655-6c7ffa25-8cb9-4d5e-948d-42caf6e33278.png)
+
 You will see the warning titled "Root user access keys are not recommended", click the checkbox and then the _Create access key_ button.
 In the next window copy both the access id and secret key. You also can download the keys in a file.
 4. **AWS EB Configuring** In your IDE terminal run the command (if you have or will have multiple applications, please jump to p.5):
+
 ```
 eb init
 ```
+
 The command starts the configuring process and will ask you for credentials. It also will ask other questions like region (you need to remember the region because the application will be deployed exactly in the given region and will be visible in others).
 If you don't want to create SSH now, you can omit this step. (More details can be found [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)).
 5. **AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
  or _~/.aws/config_ file (depending on your operating system) and add the following text:
+
 ```
 [profile profile-app-1]
 aws_access_key_id = XXXXXXXXXX
@@ -117,22 +138,29 @@ aws_secret_access_key = XXXXXXXXXXXX
 aws_access_key_id = XXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXX
 ```
+
 The profile name is arbitrary (but should not contain spaces).
 Then, when you configure EB, just use one of the profile names:
+
 ```
 eb init --profile profile-app-2
 ```
+
 6. **Create an environment** In terms of AWS, here is the hierarchy Application -> environment. So, the second step is to create an environment. Run the command:
+
 ```
 eb create
 ```
+
 Again, it will ask you some questions but most of them are pretty straightforward. Answer "_classic_" to the question about the load balancer.
 More information can be found in [their documentation on this command](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-create.html).
 
 After it's done you can sign in to the AWS console and make sure your application and environment are deployed successfully. It will provide the link you can check the working app: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226986287-99599c84-af62-4d1e-b27b-3b91dd413df5.png)
 
 7. **Deploy** Next time, when you are ready to deploy your changes, just run this command:
+
 ```
 eb deploy
 ```
@@ -145,24 +173,34 @@ eb deploy
 
 > **Warning**
 > Don't forget to set up your environment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227616385-ebc3e434-c9c7-4cc7-a2e6-5b35c3f28b73.png)
 
 To automate this process, we create the Python script (see the last section about automation).
 
 ### Set up SSL
+
 1. **Request the certificate** In the AWS console, in the search field, start typing the _certificate_ word, then click the Certificate manager: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226989389-7e8fcba1-9cfc-436b-9c3c-042458c35450.png)
+
 Then click the _Request certificate_ button: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226991614-c34fe78b-3196-42fe-9b37-57500d1e70fd.png)
+
 Leave the _Request a public certificate_ checkbox checked and click the _Next_ button: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226991833-60010f86-d983-4c11-8baf-ec10312dfae7.png)
+
 On the next page, enter the domain name (that you already have bought) you want to be covered by this certificate. If you want several domains to be covered, enter them starting from the wildcard, for example "\*.mydomain.com".
 
 > **Note**
 > You enter only those domain names that will be connected to this application. Usually, it may be a website like www.mysite.com or an application app.mysite.com. If you have several apps, you should create separate accounts for them to avoid exceeding the free tier.
 
 So, your page could look something like that: 
+
 ![image](https://user-images.githubusercontent.com/125164513/226993158-b29e09e8-a404-4a02-a52c-617e215ac8c3.png)
+
 Leave all the checkboxes untouched and click the _Request_ button.
 
 You then will be redirected to the page with certificates. If the page looks empty click the button with the round arrow to update it, then click the link with _Certificate Id_ and you will be redirected again. Scroll a bit down to see the domain list.
