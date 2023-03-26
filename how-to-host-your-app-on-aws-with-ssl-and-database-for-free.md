@@ -304,24 +304,33 @@ If you want to access the database from your computer, add the second rule but i
 Click the _Create security group_ button.
 
 2. **Create the database instance** Go to your AWS console and start typing: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227399066-f5f04a34-98ed-42ad-a282-adb36a4f0dce.png)
+
 Then click the RDS service, on the following page, click the _Create database_ button. 
+
 Leave the _Choose a database creation method_ pane with the _Standard create_ checked, then select your database and version (or leave it as is).
+
 In the _Templates_ pane select the _Free tier_ radio button and scroll a bit to the _Settings_ pane.
+
 Enter your database name and master user name, then enter and re-enter your password.
 
 > **Note**
 > This database name is used for identifying the databases in the list of your databases, this name is also used in the hostname as we can see later.
 
 In the _Instance configuration_ section, you can leave "db.t3.micro".
+
 In the _Storage_ section, leave the storage type as is ("General Purpose SSD (gp2)") but change the allocated storage to 20Gib.
 
 > **Warning**
 > This step is very important! We don't know why they set up 200 Gb by default value for a free tier because the maximum storage that they don't charge for is 20Gb, and if you leave it as is (200 Gb) you will be immediately charged even if your data is just as little as 2Kb.
 
 You can leave the _Storage autoscaling_ section as is.
+
 In the _Connectivity_ section, leave the preselected choices as is.
+
 In the _Public access_ select **Yes** and then in the _Existing VPC security groups_ select the security group you created in the previous step.
+
 In the _Additional configuration_ enter the **Initial database name** - it's the name of the database you will use in your connection string.
 
 > **Warning**
@@ -329,29 +338,34 @@ In the _Additional configuration_ enter the **Initial database name** - it's the
 
 Change or leave other options, then click the _Create database_ button.
 To make sure your database was created successfully, open _RTS -> Databases_ and find your database in the list: 
+
 ![image](https://user-images.githubusercontent.com/125164513/227603893-e76dd4f9-11e1-4195-9b6c-cb48d557c6ed.png)
 
 It usually takes several minutes to create and run the instance so wait until its status is "Available".
 
 3. **Connect to your database** To connect to your database from your application or any client (we use great free [pgAdmin](https://www.pgadmin.org/)) you need to form the connection string or get its parts. For PostgreSQL, the connection string has a format
+
 ```
 postgres://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName
 ```
-Use the same parameter to connect to the database from a client. You already know the username, password, and database name. To know the hostname, click the database and copy the endpoint on the _Endpoint & port_ pane: 
-![image](https://user-images.githubusercontent.com/125164513/227609754-f50f56f7-acfb-40b6-b202-2b34fbf83e07.png)
 
+Use the same parameter to connect to the database from a client. You already know the username, password, and database name. To know the hostname, click the database and copy the endpoint on the _Endpoint & port_ pane: 
+
+![image](https://user-images.githubusercontent.com/125164513/227609754-f50f56f7-acfb-40b6-b202-2b34fbf83e07.png)
 
 ## Troubleshooting
 In this section, we list the issues we faced but potentially anything can happen. Ask Stackoverflow or ChatGPT for assistance :)
 
 ### In your AWS log, there is an error "Invalid requirements.txt on deploying django app to aws beanstalk"
 **Solution** To your project's root folder, add the _.ebextensions_ folder and create the file named, say _01_packages.config_ with the following content:
+
 ```
 packages:
   yum:
     git: []
     postgresql93-devel: []
 ```
+
 More details are on this issue in [the Stackoverflow post](https://stackoverflow.com/questions/18554666/invalid-requirements-txt-on-deploying-django-app-to-aws-beanstalk).
 
 ### Error "Error: pg_config executable not found"
@@ -362,8 +376,9 @@ More details are on this issue in [the Stackoverflow post](https://stackoverflow
 4. push to git
 5. redeploy
 
-### Any error related to psycopg2
+### Error "ImportError: No module named psycopg2"
 **Solution** Try to change the protocol of your database connection string from "postgresql" to "postgresql+psycopg2" so the connection string will look like
+
 ```
 postgresql+psycopg2://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName
 ```
@@ -372,7 +387,9 @@ postgresql+psycopg2://YourUserName:YourPassword@YourHostname:5432/YourDatabaseNa
 Here are several scripts that you can use to automate tedious tasks.
 
 ### Fast initial setup of the application
+
 For Windows:
+
 ```
 call python -m venv venv
 call venv\Scripts\activate.bat
@@ -382,7 +399,9 @@ call npm install
 call npm run dev
 call flask run
 ```
+
 For Unix-based Oss:
+
 ```
 source venv/bin/activate
 python3 -m pip install --upgrade pip
@@ -394,6 +413,7 @@ flask run
 
 ### Deployment bat
 Create a .bat file in the root folder and put the following content inside:
+
 ```
 call npm run --prefix webapp prod
 call git add .
@@ -401,10 +421,13 @@ call git commit -m %1
 call git push origin master
 call eb deploy
 ```
+
 To run the bat, in your terminal, run the command:
+
 ```
 bat-file-name "Git message"
 ```
+
 > **Note** Write the bat file name without the extension.
 
 > **Warning**
@@ -425,6 +448,7 @@ def send_env_vars_to_aws():
         command = ' '.join(vars)
         os.system(f'eb setenv {command}')
 ```
+
 > **Note**
 > The _dotenv_ and _configobj_ packages should be installed.
 
