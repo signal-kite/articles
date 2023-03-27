@@ -58,8 +58,8 @@ You need the following tools and programs to be installed:
 ### Create and deploy an app on AWS Elastic Beanstalk (EB)
 #### Install and run your app locally
 
-1. **Create a folder and add the code there.** The very minimal application in Flask may have as few as just [5 lines of code](https://flask.palletsprojects.com/en/2.2.x/quickstart/#a-minimal-application). You can copy this code into the _application.py_ file and put it into a root folder.
-2. **Create a virtual environment** If you don't know what is a Python virtual environment you can read [this nice guide](https://thebiogirls.com/index.php/2020/01/18/how-to-set-up-a-python-virtual-environment/).
+**1. Create a folder and add the code there.** The very minimal application in Flask may have as few as just [5 lines of code](https://flask.palletsprojects.com/en/2.2.x/quickstart/#a-minimal-application). You can copy this code into the _application.py_ file and put it into a root folder.
+**2. Create a virtual environment** If you don't know what is a Python virtual environment you can read [this nice guide](https://thebiogirls.com/index.php/2020/01/18/how-to-set-up-a-python-virtual-environment/).
 Basically in your root folder you run the following command:
 
 ```
@@ -72,7 +72,7 @@ This is a command for Windows, for other OS it may look like this:
 python3 -m venv venv
 ```
 
-3. **Select an interpreter** In your VS Code, click *View -> Command Palette -> Python: Select Interpreter* and then enter into the prompt field:
+**3. Select an interpreter** In your VS Code, click *View -> Command Palette -> Python: Select Interpreter* and then enter into the prompt field:
 
 ```
 .\venv\Scripts\python.exe
