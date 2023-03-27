@@ -475,8 +475,8 @@ def send_env_vars_to_aws():
         os.system(f'eb setenv {command}')
 ```
 
-<div class="message-box note">
- <p>The <i>dotenv</i> and <i>configobj</i> packages should be installed.</p>
+<div class="message-box note" markdown="1">
+ The _dotenv_ and _configobj_ packages should be installed.</p>
 </div>
 
 Run this script from your terminal.
