@@ -100,7 +100,7 @@ pip install flask
 ```
 
 <div class="message-box note">
-Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to [the official documentation](https://pip.pypa.io/en/stable/installation/).
+Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to the official documentation https://pip.pypa.io/en/stable/installation/.
 </div>
 
 6. **Run your app** To make sure the app works normally, run it:
@@ -110,7 +110,7 @@ flask run
 ```
 
 <div class="message-box note">
-In the case of some issues, please refer to the [Flask Quick Start](https://flask.palletsprojects.com/en/1.1.x/quickstart/).
+In the case of some issues, please refer to the Flask Quick Start: https://flask.palletsprojects.com/en/1.1.x/quickstart/.
 </div>
 
 #### Set up the Amazon account
@@ -184,11 +184,10 @@ If you use a source control like GitHub please make sure you commit the changes 
 </div>
 
 <div class="message-box warning">
-Don't forget to set up your environment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane: 
+Don't forget to set up your environment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane (see the image below). 
+</div>
 
 ![image](https://user-images.githubusercontent.com/125164513/227616385-ebc3e434-c9c7-4cc7-a2e6-5b35c3f28b73.png)
- 
-</div>
 
 To automate this process, we create the Python script (see the last section about automation).
 
