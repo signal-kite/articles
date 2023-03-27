@@ -139,7 +139,6 @@ If you don't want to create SSH now, you can omit this step. (More details can b
 [profile profile-app-1]
 aws_access_key_id = XXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXX
-
 [profile profile-app-2]
 aws_access_key_id = XXXXXXXXXX
 aws_secret_access_key = XXXXXXXXXXXX
