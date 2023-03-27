@@ -81,7 +81,7 @@ python3 -m venv venv
 
 ![image](https://user-images.githubusercontent.com/125164513/226763279-a6378b84-8821-4eec-a4b8-892a538bb36f.png)
 
-4. **Activate the virtual environment** In your VS Code terminal, run the command to activate the virtual environment.
+**4. Activate the virtual environment** In your VS Code terminal, run the command to activate the virtual environment.
 For Windows, run:
 
 ```
@@ -94,7 +94,7 @@ For Mac/Linux, run:
 source venv/bin/activate
 ```
 
-5. **Install the Python packages** To run the Flask app, we need to install Flask itself. To do it, run the following command:
+**5. Install the Python packages** To run the Flask app, we need to install Flask itself. To do it, run the following command:
 
 ```
 pip install flask
@@ -104,7 +104,7 @@ pip install flask
 Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to the official documentation https://pip.pypa.io/en/stable/installation/.
 </div>
 
-6. **Run your app** To make sure the app works normally, run it:
+**6. Run your app** To make sure the app works normally, run it:
 
 ```
 flask run
@@ -116,9 +116,11 @@ In the case of some issues, please refer to the Flask Quick Start: https://flask
 
 #### Set up the Amazon account
 
-1. **Create an account** First, go to the AWS console and create [a new account](https://portal.aws.amazon.com/billing/signup#/start/email). You will need to verify your email, enter a credit card (even if you will only free tier), and verify your phone number.
-2. **Sign in to the AWS console** Now you can sign in. Please note, that verification of your new account may take some time, up to several hours. It looks like you can sign in but can't do anything in the console.
-3. **Copy your credentials** Inside the AWS console, click your username (in the top right corner), and select _Security credentials_. 
+**1. Create an account** First, go to the AWS console and create [a new account](https://portal.aws.amazon.com/billing/signup#/start/email). You will need to verify your email, enter a credit card (even if you will only free tier), and verify your phone number.
+
+**2. Sign in to the AWS console** Now you can sign in. Please note, that verification of your new account may take some time, up to several hours. It looks like you can sign in but can't do anything in the console.
+
+**3. Copy your credentials** Inside the AWS console, click your username (in the top right corner), and select _Security credentials_. 
 
 ![image](https://user-images.githubusercontent.com/125164513/226777317-6f56f140-b690-4f29-b39b-ff3f14e437ca.png)
 
@@ -129,7 +131,7 @@ Scroll a bit and click the _Create access key_ button:
 You will see the warning titled "Root user access keys are not recommended", click the checkbox and then the _Create access key_ button.
 In the next window copy both the access id and secret key. You also can download the keys in a file.
 
-4. **AWS EB Configuring** In your IDE terminal run the command (if you have or will have multiple applications, please jump to p.5):
+**4. AWS EB Configuring** In your IDE terminal run the command (if you have or will have multiple applications, please jump to p.5):
 
 ```
 eb init
@@ -138,7 +140,7 @@ eb init
 The command starts the configuring process and will ask you for credentials. It also will ask other questions like region (you need to remember the region because the application will be deployed exactly in the given region and will be visible in others).
 If you don't want to create SSH now, you can omit this step. (More details can be found [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)).
 
-5. **AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
+**5. AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
  or _~/.aws/config_ file (depending on your operating system) and add the following text:
 
 ```
@@ -157,7 +159,7 @@ Then, when you configure EB, just use one of the profile names:
 eb init --profile profile-app-2
 ```
 
-6. **Create an environment** In terms of AWS, here is the hierarchy Application -> environment. So, the second step is to create an environment. Run the command:
+**6. Create an environment** In terms of AWS, here is the hierarchy Application -> environment. So, the second step is to create an environment. Run the command:
 
 ```
 eb create
@@ -170,7 +172,7 @@ After it's done you can sign in to the AWS console and make sure your applicatio
 
 ![image](https://user-images.githubusercontent.com/125164513/226986287-99599c84-af62-4d1e-b27b-3b91dd413df5.png)
 
-7. **Deploy** Next time, when you are ready to deploy your changes, just run this command:
+**7. Deploy** Next time, when you are ready to deploy your changes, just run this command:
 
 ```
 eb deploy
@@ -194,7 +196,7 @@ To automate this process, we create the Python script (see the last section abou
 
 ### Set up SSL
 
-1. **Request the certificate** In the AWS console, in the search field, start typing the _certificate_ word, then click the Certificate manager: 
+**1. Request the certificate** In the AWS console, in the search field, start typing the _certificate_ word, then click the Certificate manager: 
 
 ![image](https://user-images.githubusercontent.com/125164513/226989389-7e8fcba1-9cfc-436b-9c3c-042458c35450.png)
 
@@ -220,7 +222,7 @@ Leave all the checkboxes untouched and click the _Request_ button.
 
 You then will be redirected to the page with certificates. If the page looks empty click the button with the round arrow to update it, then click the link with _Certificate Id_ and you will be redirected again. Scroll a bit down to see the domain list.
 
-2. **Validate your domain ownership** In the previous step, we left the _DNS validation_ checked, so we need to prove we own our domain names. To do that, sign in to the control panel of your hosting provider. In our example, we will use the Namecheap. After you signed in, open the list of your domains, find your domain, and click the _Manage_ button: 
+**2. Validate your domain ownership** In the previous step, we left the _DNS validation_ checked, so we need to prove we own our domain names. To do that, sign in to the control panel of your hosting provider. In our example, we will use the Namecheap. After you signed in, open the list of your domains, find your domain, and click the _Manage_ button: 
 
 ![image](https://user-images.githubusercontent.com/125164513/226995705-a615d298-4004-4e9d-8e1f-59f225d2068c.png)
 
@@ -259,7 +261,7 @@ Usually, the DNS updating records takes 20-30 minutes but sometimes longer. As s
 
 ![image](https://user-images.githubusercontent.com/125164513/227002269-bca8f068-a882-401c-9978-60e470cc9f16.png)
 
-3. **Add a load balancer** Come back to your EB console. Click your environment, then _Configuration_ link: 
+**3. Add a load balancer** Come back to your EB console. Click your environment, then _Configuration_ link: 
 
 ![image](https://user-images.githubusercontent.com/125164513/227392070-e99c822c-d4f8-4d89-a4a6-0f37fa3461f6.png)
 
@@ -270,7 +272,7 @@ Scroll to the _Load balancer_ and click the _Edit_ button on the right. Click th
 In the _SSL certificate_ dropdown, select the certificate you created in the previous step.
 Click the _Add_ button, you will be redirected back. Scroll the page to the end and click the _Apply_ button.
 
-4. **Update the DNS record** Copy your environment AWS URL. For example, you can copy the link from the left menu from the _Go to environment_ item: 
+**4. Update the DNS record** Copy your environment AWS URL. For example, you can copy the link from the left menu from the _Go to environment_ item: 
 
 ![image](https://user-images.githubusercontent.com/125164513/227393220-eb9f52f4-afc9-4867-959c-d0141bbcb6ba.png)
 
@@ -295,13 +297,13 @@ Please be aware that SSL and the load balancer can be used for free for 1 year *
 
 If your database will be accessed remotely, you will need to create and configure a security group.
 
-1. **Know your environment security group** Open your AWS EB console, click the environment, and then click the _Configuration_ in the left menu. In the _Instances_ pane, click the _Edit_ button, and then scroll to the end to see the list of security groups. You will see something like that: 
+**1. Know your environment security group** Open your AWS EB console, click the environment, and then click the _Configuration_ in the left menu. In the _Instances_ pane, click the _Edit_ button, and then scroll to the end to see the list of security groups. You will see something like that: 
 
 ![image](https://user-images.githubusercontent.com/125164513/227404563-1f2fd039-ae35-418f-8ea5-c0fb3d8d1f25.png)
 
 Write down the selected group Id.
 
-2. **Create a new security group** In your AWS console, start typing "ec2" in the search field, then select the _EC2_ service: 
+**2. Create a new security group** In your AWS console, start typing "ec2" in the search field, then select the _EC2_ service: 
 
 ![image](https://user-images.githubusercontent.com/125164513/227400233-0474f753-5c36-4659-833a-5fa3c75366ae.png)
 
@@ -323,7 +325,7 @@ If you want to access the database from your computer, add the second rule but i
 
 Click the _Create security group_ button.
 
-2. **Create the database instance** Go to your AWS console and start typing: 
+**3. Create the database instance** Go to your AWS console and start typing: 
 
 ![image](https://user-images.githubusercontent.com/125164513/227399066-f5f04a34-98ed-42ad-a282-adb36a4f0dce.png)
 
@@ -366,7 +368,7 @@ To make sure your database was created successfully, open _RTS -> Databases_ and
 
 It usually takes several minutes to create and run the instance so wait until its status is "Available".
 
-3. **Connect to your database** To connect to your database from your application or any client (we use great free [pgAdmin](https://www.pgadmin.org/)) you need to form the connection string or get its parts. For PostgreSQL, the connection string has a format
+**4. Connect to your database** To connect to your database from your application or any client (we use great free [pgAdmin](https://www.pgadmin.org/)) you need to form the connection string or get its parts. For PostgreSQL, the connection string has a format
 
 ```
 postgres://YourUserName:YourPassword@YourHostname:5432/YourDatabaseName
