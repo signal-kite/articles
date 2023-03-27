@@ -31,11 +31,13 @@ So, this article is dedicated to hosting applications with AWS. When you start a
  Don't forget to check [the Amazon program for startups](https://aws.amazon.com/activate/founders/) for additional funding and discounts!
 </div>
 
-> **Warning**
-> We provide some solutions for Windows OS, please check the reference for other operating systems.
+<div class="message-box warning">
+ We provide some solutions for Windows OS, please check the reference for other operating systems.
+</div>
 
-> **Note**
-> As a sample application, we will create an app written in Python (Flask).
+<div class="message-box note">
+As a sample application, we will create an app written in Python (Flask).
+</div>
 
 Before we start, let's define the list of tasks we would like to accomplish:
 
@@ -97,8 +99,9 @@ source venv/bin/activate
 pip install flask
 ```
 
-> **Note**
-> Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to [the official documentation](https://pip.pypa.io/en/stable/installation/).
+<div class="message-box note">
+Usually, the Python package manager PIP installs automatically but if it didn't happen please refer to [the official documentation](https://pip.pypa.io/en/stable/installation/).
+</div>
 
 6. **Run your app** To make sure the app works normally, run it:
 
@@ -106,8 +109,9 @@ pip install flask
 flask run
 ```
 
-> **Note**
-> In the case of some issues, please refer to the [Flask Quick Start](https://flask.palletsprojects.com/en/1.1.x/quickstart/).
+<div class="message-box note">
+In the case of some issues, please refer to the [Flask Quick Start](https://flask.palletsprojects.com/en/1.1.x/quickstart/).
+</div>
 
 #### Set up the Amazon account
 
@@ -171,16 +175,20 @@ After it's done you can sign in to the AWS console and make sure your applicatio
 eb deploy
 ```
 
-> **Note**
-> If your app's front end is built with Webpack compile your JavaScript code on your website and deploy the resulting bundle. We didn't find a way to make AWS EB compile the JavaScript code during deployment. Don't forget to remove the dist folders from your .gitingore file.
+<div class="message-box note">
+If your app's front end is built with Webpack compile your JavaScript code on your website and deploy the resulting bundle. We didn't find a way to make AWS EB compile the JavaScript code during deployment. Don't forget to remove the dist folders from your .gitingore file.
+</div>
 
-> **Note**
-> If you use a source control like GitHub please make sure you commit the changes first because AWS EB CLI automatically grabs the latest from the repository. For how to automate the process, see the section "Automation".
+<div class="message-box note">
+If you use a source control like GitHub please make sure you commit the changes first because AWS EB CLI automatically grabs the latest from the repository. For how to automate the process, see the section "Automation".
+</div>
 
-> **Warning**
-> Don't forget to set up your environment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane: 
+<div class="message-box warning">
+Don't forget to set up your environment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane: 
 
 ![image](https://user-images.githubusercontent.com/125164513/227616385-ebc3e434-c9c7-4cc7-a2e6-5b35c3f28b73.png)
+ 
+</div>
 
 To automate this process, we create the Python script (see the last section about automation).
 
@@ -200,8 +208,9 @@ Leave the _Request a public certificate_ checkbox checked and click the _Next_ b
 
 On the next page, enter the domain name (that you already have bought) you want to be covered by this certificate. If you want several domains to be covered, enter them starting from the wildcard, for example "*.mydomain.com".
 
-> **Note**
-> You enter only those domain names that will be connected to this application. Usually, it may be a website like www.mysite.com or an application app.mysite.com. If you have several apps, you should create separate accounts for them to avoid exceeding the free tier.
+<div class="message-box note">
+You enter only those domain names that will be connected to this application. Usually, it may be a website like www.mysite.com or an application app.mysite.com. If you have several apps, you should create separate accounts for them to avoid exceeding the free tier.
+</div>
 
 So, your page could look something like that: 
 
@@ -230,9 +239,13 @@ Now, come back to the certificate manager, and copy the following values to the 
 
 ![image](https://user-images.githubusercontent.com/125164513/226997311-17f99233-728e-480d-b113-c5f60edeec2c.png)
 
-> **Note** Do not copy the full **CNAME name**, only the part **before** your domain name as shown in the picture above. For the domain with "www", "app" or any other prefix, copy the prefix but not the domain name.
+<div class="message-box warning">
+ Do not copy the full **CNAME name**, only the part **before** your domain name as shown in the picture above. For the domain with "www", "app" or any other prefix, copy the prefix but not the domain name.
+</div>
 
-> **Note** We found the Namecheap DNS record editor a bit weird: when we copy the values right from the AWS Console, the UI gets frozen. So, instead, we copy the values to some plain text editor, then copy the text into the Namecheap record.
+<div class="message-box note">
+ We found the Namecheap DNS record editor a bit weird: when we copy the values right from the AWS Console, the UI gets frozen. So, instead, we copy the values to some plain text editor, then copy the text into the Namecheap record.
+</div>
 
 So, in this example, you create 2 records, one of them should look like this: 
 
@@ -269,11 +282,13 @@ You may leave the _Host_ field as is (if you want the URL to start with "www", o
 
 That's it!
 
-> **Note**
-> The changes may take some time, usually 20-30 minutes, sometimes more. To verify your domain with SSL works, just enter in your web browser the domain name with "https" like: "https://mywebsite.com". If after 1-2 hours it's still not working, please check if you've done everything as described, if so, please ask your hosting provider for assistance.
+<div class="message-box note">
+The changes may take some time, usually 20-30 minutes, sometimes more. To verify your domain with SSL works, just enter in your web browser the domain name with "https" like: "https://mywebsite.com". If after 1-2 hours it's still not working, please check if you've done everything as described, if so, please ask your hosting provider for assistance.
+</div>
 
-> **Warning**
-> Please be aware that SSL and the load balancer can be used for free for 1 year **only for for one application/environment**. If you add one more, even without a load balancer, you can be immediately charged.
+<div class="message-box warning">
+Please be aware that SSL and the load balancer can be used for free for 1 year **only for for one application/environment**. If you add one more, even without a load balancer, you can be immediately charged.
+</div>
 
 ## Set up your AWS RDS PostgreSQL database
 ### Create a special database security group
@@ -320,15 +335,17 @@ In the _Templates_ pane select the _Free tier_ radio button and scroll a bit to 
 
 Enter your database name and master user name, then enter and re-enter your password.
 
-> **Note**
-> This database name is used for identifying the databases in the list of your databases, this name is also used in the hostname as we can see later.
+<div class="message-box note">
+This database name is used for identifying the databases in the list of your databases, this name is also used in the hostname as we can see later.
+</div>
 
 In the _Instance configuration_ section, you can leave "db.t3.micro".
 
 In the _Storage_ section, leave the storage type as is ("General Purpose SSD (gp2)") but change the allocated storage to 20Gib.
 
-> **Warning**
-> This step is very important! We don't know why they set up 200 Gb by default value for a free tier because the maximum storage that they don't charge for is 20Gb, and if you leave it as is (200 Gb) you will be immediately charged even if your data is just as little as 2Kb.
+<div class="message-box warning">
+This step is very important! We don't know why they set up 200 Gb by default value for a free tier because the maximum storage that they don't charge for is 20Gb, and if you leave it as is (200 Gb) you will be immediately charged even if your data is just as little as 2Kb.
+</div>
 
 You can leave the _Storage autoscaling_ section as is.
 
@@ -338,8 +355,9 @@ In the _Public access_ select **Yes** and then in the _Existing VPC security gro
 
 In the _Additional configuration_ enter the **Initial database name** - it's the name of the database you will use in your connection string.
 
-> **Warning**
-> If you omit to enter the database name, it will be set up as "postgres". 
+<div class="message-box warning">
+If you omit to enter the database name, it will be set up as "postgres". 
+</div>
 
 Change or leave other options, then click the _Create database_ button.
 To make sure your database was created successfully, open _RTS -> Databases_ and find your database in the list: 
@@ -417,7 +435,7 @@ npm run dev
 flask run
 ```
 
-### Deployment bat
+### Deployment batch file
 Create a .bat file in the root folder and put the following content inside:
 
 ```
@@ -434,10 +452,10 @@ To run the bat, in your terminal, run the command:
 bat-file-name "Git message"
 ```
 
-> **Note** Write the bat file name without the extension.
 
-> **Warning**
-> This command is for Windows. For Unix-based OS, please, amend it correspondingly.
+<div class="message-box warning">
+This command is for Windows. For Unix-based OS, please, amend it correspondingly.
+</div>
 
 ### Python script to load the environment variables
 You may add and change your env variables manually but for a faster process, we use the following script:
@@ -455,7 +473,8 @@ def send_env_vars_to_aws():
         os.system(f'eb setenv {command}')
 ```
 
-> **Note**
-> The _dotenv_ and _configobj_ packages should be installed.
+<div class="message-box note">
+The _dotenv_ and _configobj_ packages should be installed.
+</div>
 
 Run this script from your terminal.
