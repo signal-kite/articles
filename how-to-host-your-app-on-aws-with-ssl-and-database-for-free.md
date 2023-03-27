@@ -4,6 +4,7 @@ Photo by <a href="https://unsplash.com/@austindistel?utm_source=unsplash&utm_med
 
 ## Why AWS
 Amazon Web Service is a powerful platform that allows doing a lot of things. Literally speaking, you can do everything beginning with simple things like hosting and ending with super-complex machine learning modeling. Moreover, most of their services have:
+
 - free trials
 - 12-month free tier
 - forever free offers
