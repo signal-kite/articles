@@ -41,9 +41,9 @@ As a sample application, we will create an app written in Python (Flask).
 
 Before we start, let's define the list of tasks we would like to accomplish:
 
-- [ ] Create an application (in terms of AWS) and deploy it
-- [ ] Attach our own domain name and provide SSL
-- [ ] Create the database and connect to it (we will work with PostgreSQL)
+- Create an application (in terms of AWS) and deploy it
+- Attach our own domain name and provide SSL
+- Create the database and connect to it (we will work with PostgreSQL)
 
 #### Prerequisites
 
@@ -59,6 +59,7 @@ You need the following tools and programs to be installed:
 #### Install and run your app locally
 
 **1. Create a folder and add the code there.** The very minimal application in Flask may have as few as just [5 lines of code](https://flask.palletsprojects.com/en/2.2.x/quickstart/#a-minimal-application). You can copy this code into the _application.py_ file and put it into a root folder.
+
 **2. Create a virtual environment** If you don't know what is a Python virtual environment you can read [this nice guide](https://thebiogirls.com/index.php/2020/01/18/how-to-set-up-a-python-virtual-environment/).
 Basically in your root folder you run the following command:
 
