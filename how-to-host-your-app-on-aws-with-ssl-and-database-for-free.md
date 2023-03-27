@@ -187,7 +187,7 @@ If you use a source control like GitHub please make sure you commit the changes 
 </div>
 
 <div class="message-box warning">
-Don't forget to set up your environment variables. To add them, click your environment, then the <i>Configuration</i> link in the left menu, and then click the <i>Edit</i> button against the <i>Software</i> pane (see the image below). 
+<p>Don't forget to set up your environment variables. To add them, click your environment, then the <i>Configuration</i> link in the left menu, and then click the <i>Edit</i> button against the <i>Software</i> pane (see the image below). <p>
 </div>
 
 ![image](https://user-images.githubusercontent.com/125164513/227616385-ebc3e434-c9c7-4cc7-a2e6-5b35c3f28b73.png)
@@ -289,7 +289,7 @@ The changes may take some time, usually 20-30 minutes, sometimes more. To verify
 </div>
 
 <div class="message-box warning">
-Please be aware that SSL and the load balancer can be used for free for 1 year <b>only for for one application/environment</b>. If you add one more, even without a load balancer, you can be immediately charged.
+<p>Please be aware that SSL and the load balancer can be used for free for 1 year <b>only for for one application/environment</b>. If you add one more, even without a load balancer, you can be immediately charged.</p>
 </div>
 
 ## Set up your AWS RDS PostgreSQL database
@@ -476,7 +476,7 @@ def send_env_vars_to_aws():
 ```
 
 <div class="message-box note">
- The <i>dotenv</i> and <i>configobj</i> packages should be installed.
+ <p>The <i>dotenv</i> and <i>configobj</i> packages should be installed.</p>
 </div>
 
 Run this script from your terminal.
