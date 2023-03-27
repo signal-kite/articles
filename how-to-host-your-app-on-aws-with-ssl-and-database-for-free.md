@@ -11,6 +11,7 @@ Amazon Web Service is a powerful platform that allows doing a lot of things. Lit
 The full list of services with their free options can be found [here](https://aws.amazon.com/free/).
 
 Unfortunately, there are flaws too: 
+
 - To use many services and get the most out of them you need to be proficient in the service's topics
 - many services have confusing UI/UX and a million options
 - some of the options can easily turn a free service into a crazy-cost one.
@@ -23,7 +24,7 @@ So, this article is dedicated to hosting applications with AWS. When you start a
 3. You can easily attach your own domain name and SSL.
 
 ### Some flaws
-1. As a tradition, the UI/UX is not simple and intuitive but this article should guide you through all the obstacles and show all the tricks.
+1. Traditionally, the UI/UX is not simple and intuitive but this article should guide you through all the obstacles and show all the tricks.
 2. It may be suitable only for apps that can be easily run on Linux (like Node.js or Python/Flask). We tried to run a .Net app but didn't find a way to install the additional libraries that we needed.
 
 > **Note**
@@ -36,6 +37,7 @@ So, this article is dedicated to hosting applications with AWS. When you start a
 > As a sample application, we will create an app written in Python (Flask).
 
 Before we start, let's define the list of tasks we would like to accomplish:
+
 - [ ] Create an application (in terms of AWS) and deploy it
 - [ ] Attach our own domain name and provide SSL
 - [ ] Create the database and connect to it (we will work with PostgreSQL)
@@ -43,6 +45,7 @@ Before we start, let's define the list of tasks we would like to accomplish:
 #### Prerequisites
 
 You need the following tools and programs to be installed:
+
 1. IDE. We use [MS VS Code](https://code.visualstudio.com/)
 2. Python. At the moment, it's the version 3.8 but you can [download a fresher version](https://www.python.org/downloads/)
 3. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -75,7 +78,6 @@ python3 -m venv venv
 ![image](https://user-images.githubusercontent.com/125164513/226763279-a6378b84-8821-4eec-a4b8-892a538bb36f.png)
 
 4. **Activate the virtual environment** In your VS Code terminal, run the command to activate the virtual environment.
-5. 
 For Windows, run:
 
 ```
@@ -196,7 +198,7 @@ Leave the _Request a public certificate_ checkbox checked and click the _Next_ b
 
 ![image](https://user-images.githubusercontent.com/125164513/226991833-60010f86-d983-4c11-8baf-ec10312dfae7.png)
 
-On the next page, enter the domain name (that you already have bought) you want to be covered by this certificate. If you want several domains to be covered, enter them starting from the wildcard, for example "\*.mydomain.com".
+On the next page, enter the domain name (that you already have bought) you want to be covered by this certificate. If you want several domains to be covered, enter them starting from the wildcard, for example "*.mydomain.com".
 
 > **Note**
 > You enter only those domain names that will be connected to this application. Usually, it may be a website like www.mysite.com or an application app.mysite.com. If you have several apps, you should create separate accounts for them to avoid exceeding the free tier.
@@ -295,6 +297,7 @@ Scroll a bit to see the menu on the left and click it:
 Click the _Create security group_ button on the top right. Enter your group name, for example, "Database security group", then the description (optional). Click the _Add rule_ button in the _Inbound rules_ pane.
 
 For the new rule:
+
 - In the _Type_ field select "PostgreSQL"
 - Leave the _Protocol_, _Port range_, and _Source_ as is
 - In the field next to the _Source_ start typing "sg" and select the group accompanied by the environment (that you wrote down in step 1). This will allow your application to access the database and prevents connections from any other places.
@@ -372,6 +375,7 @@ More details are on this issue in [the Stackoverflow post](https://stackoverflow
 
 ### Error "Error: pg_config executable not found"
 **Solution**
+
 1. uninstall psycopg2, 
 2. install psycopg2-binary
 3. update requirements
