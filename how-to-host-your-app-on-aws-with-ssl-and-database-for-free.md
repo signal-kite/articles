@@ -27,7 +27,7 @@ So, this article is dedicated to hosting applications with AWS. When you start a
 1. Traditionally, the UI/UX is not simple and intuitive but this article should guide you through all the obstacles and show all the tricks.
 2. It may be suitable only for apps that can be easily run on Linux (like Node.js or Python/Flask). We tried to run a .Net app but didn't find a way to install the additional libraries that we needed.
 
-<div class="message-box info">
+<div class="message-box note">
  Don't forget to check [the Amazon program for startups](https://aws.amazon.com/activate/founders/) for additional funding and discounts!
 </div>
 
