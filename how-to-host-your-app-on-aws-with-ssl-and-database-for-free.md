@@ -140,7 +140,7 @@ eb init
 The command starts the configuring process and will ask you for credentials. It also will ask other questions like region (you need to remember the region because the application will be deployed exactly in the given region and will be visible in others).
 If you don't want to create SSH now, you can omit this step. (More details can be found [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)).
 
-**5. AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\.aws\config_
+**5. AWS EB Configuring for multiple apps** If you have or plan to have multiple applications, you can try another approach. Open the _C:\Users\username\\.aws\config_
  or _~/.aws/config_ file (depending on your operating system) and add the following text:
 
 ```
@@ -187,7 +187,7 @@ If you use a source control like GitHub please make sure you commit the changes 
 </div>
 
 <div class="message-box warning">
-Don't forget to set up your environment variables. To add them, click your environment, then the _Configuration_ link in the left menu, and then click the _Edit_ button against the _Software_ pane (see the image below). 
+Don't forget to set up your environment variables. To add them, click your environment, then the <i>Configuration</i> link in the left menu, and then click the <i>Edit</i> button against the <i>Software</i> pane (see the image below). 
 </div>
 
 ![image](https://user-images.githubusercontent.com/125164513/227616385-ebc3e434-c9c7-4cc7-a2e6-5b35c3f28b73.png)
@@ -289,7 +289,7 @@ The changes may take some time, usually 20-30 minutes, sometimes more. To verify
 </div>
 
 <div class="message-box warning">
-Please be aware that SSL and the load balancer can be used for free for 1 year **only for for one application/environment**. If you add one more, even without a load balancer, you can be immediately charged.
+Please be aware that SSL and the load balancer can be used for free for 1 year <b>only for for one application/environment</b>. If you add one more, even without a load balancer, you can be immediately charged.
 </div>
 
 ## Set up your AWS RDS PostgreSQL database
@@ -476,7 +476,7 @@ def send_env_vars_to_aws():
 ```
 
 <div class="message-box note">
-The _dotenv_ and _configobj_ packages should be installed.
+ The <i>dotenv</i> and <i>configobj</i> packages should be installed.
 </div>
 
 Run this script from your terminal.
